@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/f04d26ea0f.js" crossorigin="anonymous"></script>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+
+    }
+
+    body {
+      background-color: rgb(2, 2, 61);
+      height: 3400px;
+    }
+
+    .div-car-one {
+      /* background-color: rgb(255, 255, 255); */
+      height: 70px;
+      width: 1250px;
+      display: flex;
+    }
+
+    .div-car-one-one img {
+      height: 90px;
+      width: 260px;
+      /* background-color: black; */
+    }
+
+    .div-car-one-two p {
+      font-size: 18px;
+      color: white;
+      margin-left: 550px;
+      margin-top: 35px;
+
+
+    }
+
+    .div-car-one-three {
+      height: 33px;
+      width: 250px;
+      background-color: rgb(83, 83, 128);
+      border-radius: 5px;
+      margin-top: 30px;
+      margin-left: 10px;
+
+    }
+
+    .div-car-one-three button {
+      height: 20px;
+      width: 200px;
+      margin-left: 25px;
+      margin-top: 5px;
+      color: white;
+      background-color: rgb(83, 83, 128);
+      border: 2px solid rgb(83, 83, 128);
+      margin-top: 7px;
+
+    }
+
+    .div-car-one-three-four i {
+      font-size: 27px;
+      color: white;
+      margin-top: 30px;
+      margin-left: 10px;
+    }
+
+    .div-car-one-three-five button {
+      height: 33px;
+      border: 2px solid white;
+      border-radius: 4px;
+      margin-top: 30px;
+      width: 75px;
+      margin-left: 10px;
+    }
+
+    .div-car-two {
+      height: 60px;
+      width: 1250px;
+      background-color: rgb(2, 2, 61);
+      display: flex;
+
+    }
+
+    .div-car-two-one button {
+      height: 40px;
+      width: 100px;
+      border: 2px solid white;
+      border-radius: 10px;
+      margin: 10px;
+      background-color: rgb(2, 2, 61);
+      color: white;
+    }
+
+    .div-car-two-one i {
+      font-size: 20px;
+      color: white;
+      margin-left: 12px;
+      margin-top: 20px;
+      position: absolute;
+    }
+
+    .div-car-two-two button {
+      height: 40px;
+      width: 100px;
+      border: 2px solid white;
+      color: white;
+      margin: 10px;
+      border-radius: 10px;
+      background-color: rgb(2, 2, 61)
+    }
+
+    .div-car-two-two i {
+      font-size: 20px;
+      color: white;
+      position: absolute;
+      margin-left: 14px;
+      margin-top: 20px;
+    }
+
+    .div-car-two-three button {
+      height: 40px;
+      width: 100px;
+      border-radius: 10px;
+      border: 2px solid white;
+      margin: 10px;
+      background-color: rgb(2, 2, 61);
+      color: white;
+    }
+
+    .div-car-two-three b {
+      margin-left: 15px;
+    }
+
+    .div-car-two-three i {
+      font-size: 20px;
+      color: white;
+      margin-top: 20px;
+      margin-left: 13px;
+      position: absolute;
+    }
+
+    .div-car-three {
+      height: 550px;
+      /* width: 1263px; */
+      width: 100%;
+      background-color: brown;
+    }
+
+    .div-car-three img {
+      height: 550px;
+      /* width: 1263px; */
+      width: 100%;
+    }
+
+    .div-car-three h1 {
+      position: absolute;
+      font-size: 60px;
+      color: white;
+      margin-left: 20px;
+      margin-top: 150px;
+    }
+
+    .div-car-three-one {
+      height: 180px;
+      width: 1230px;
+      position: absolute;
+      background-color: rgb(9, 22, 73);
+      margin-top: 230px;
+      margin-left: 20px;
+      display: flex;
+      box-sizing: border-box;
+      padding-top: 20px;
+    }
+
+    .car-one {
+      box-sizing: border-box;
+      height: 80px;
+      width: 270px;
+      background-color: aliceblue;
+      margin: 5px;
+      border-radius: 10px 0px 0px 10px;
+
+
+    }
+
+    .car-two {
+      height: 80px;
+      width: 200px;
+      background-color: aliceblue;
+      margin: 5px;
+    }
+
+    .car-three {
+      height: 80px;
+      width: 200px;
+      background-color: aliceblue;
+      margin: 5px;
+    }
+
+    .car-four {
+      height: 80px;
+      width: 200px;
+      background-color: aliceblue;
+      margin: 5px;
+    }
+    .car-five {
+      height: 80px;
+      width: 200px;
+      background-color: aliceblue;
+      margin: 5px;
+      border-radius: 0px 10px 10px 0px;
+    }
+
+    .car-six {
+      height: 80px;
+      width: 100px;
+      background-color: blue;
+      color: white;
+      margin-left: 7px;
+      margin-top: 5px;
+      border-radius: 10px;
+      padding-top: 25px;
+      box-sizing: border-box;
+    }
+
+    .car-six b {
+      margin-left: 25px;
+      font-size: 20px;
+    }
+
+    #shift {
+      margin-left: 20px;
+      margin-top: 10px;
+      color: rgb(73, 72, 72);
+    }
+
+    #airport {
+      margin-left: 20px;
+      margin-top: 7px;
+    }
+
+    .div-car-four {
+      height: 50px;
+      width: 600px;
+      /* background-color: rgb(77, 23, 23); */
+      position: absolute;
+      margin-top: 90px;
+      display: flex;
+    }
+
+    .div-car-four input {
+      height: 30px;
+      width: 20px;
+      margin-left: 10px;
+    }
+
+    #top {
+      color: white;
+      font-size: 18px;
+      margin-top: 5px;
+      margin-left: 4px;
+
+    }
+
+    #down {
+      color: white;
+      font-size: 18px;
+      margin-top: 5px;
+      margin-left: 4px;
+
+    }
+
+    .div-car-five {
+      height: 30px;
+      width: 1263px;
+      background-color: white;
+
+    }
+
+    #home {
+      font-size: 15px;
+      color: rgb(45, 44, 44);
+      padding-top: 10px;
+      margin-left: 20px;
+    }
+
+    #hire {
+      position: absolute;
+      margin-left: 80px;
+      margin-top: -17px;
+    }
+
+    .div-car-five i {
+      font-size: 20px;
+      color: black;
+      margin-top: 30px;
+      margin-left: 20px;
+
+    }
+
+    .div-car-six {
+      height: 100px;
+      width: 1263px;
+      background-color: white;
+      display: flex;
+    }
+
+    .div-car-six i {
+      font-size: 20px;
+      color: black;
+      margin-left: 20px;
+      margin-top: 30px;
+
+    }
+
+    #search {
+      margin-top: 25px;
+      margin-left: 5px;
+
+    }
+
+    .div-car-seveen {
+      height: 150px;
+      width: 1263px;
+      background-color: rgb(255, 255, 255);
+      padding-top: 50px;
+      box-sizing: border-box;
+      display: flex;
+
+    }
+
+    .div-car-seveen p {
+      margin-left: 50px;
+    }
+
+    .div-car-eight {
+      height: 60px;
+      width: 1263px;
+      background-color: rgb(255, 255, 255);
+    }
+
+    .div-car-eight h1 {
+      margin-left: 20px;
+    }
+
+    .div-car-nine {
+      height: 350px;
+      width: 1263px;
+      background-color: rgb(255, 255, 255);
+
+      display: flex;
+      box-sizing: border-box;
+    }
+
+    .div-car-nine-one {
+      height: 300px;
+      width: 400px;
+      background-color: white;
+      margin-left: 10px;
+      margin-top: 20px;
+      box-sizing: border-box;
+      border-radius: 10px;
+      transition: 3ms;
+      border: 1px solid black;
+
+    }
+
+    .div-car-nine-one:hover {
+      box-shadow: 0px 5px 5px 3px rgb(112, 112, 112);
+    }
+
+    .div-car-first {
+      height: 200px;
+      width: 400px;
+      background-color: aqua;
+      border-radius: 10px 10px 0px 0px;
+      transition: 3s;
+    }
+
+    .div-car-first img {
+      height: 200px;
+      width: 400px;
+      border-radius: 10px 10px 0px 0px;
+    }
+
+    .div-car-second {
+      height: 100px;
+      width: 400px;
+      border-radius: 0px 0px 10px 10px;
+      background-color: yellow;
+      display: flex;
+      box-sizing: border-box;
+    }
+
+    .div-car-second-first {
+      height: 100px;
+      width: 250px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 0px 0px 0px 10px;
+    }
+
+    .div-car-second-first h1 {
+      font-size: 18px;
+      margin: 15px;
+    }
+
+    .div-car-second-first p {
+      font-size: 13px;
+      margin: 15px;
+      color: rgb(81, 78, 78);
+    }
+
+    .div-car-second-second {
+      height: 100px;
+      width: 150px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 0px 0px 10px 0px;
+    }
+
+    #from {
+      font-size: 15px;
+      color: rgb(80, 76, 76);
+      margin-left: 100px;
+      margin-top: 10px;
+    }
+
+    #per {
+      margin-left: 90px;
+
+    }
+
+    .div-car-second-second h1 {
+      font-size: 22px;
+      margin-left: 90px;
+
+    }
+.div-car-tin {
+      height: 130px;
+      width: 1263px;
+      background-color: rgb(255, 255, 255);
+    }
+
+    .div-car-tin h1 {
+      font-size: 30px;
+      margin-left: 10px;
+      /* margin-top: 6px; */
+    }
+
+    .div-car-tin p {
+      margin-left: 10px;
+      margin-top: 6px;
+      font-size: 18px;
+    }
+
+    .div-car-eleven {
+      height: 350px;
+      width: 1263px;
+      background-color: rgb(255, 255, 255);
+      display: flex;
+      box-sizing: border-box;
+    }
+
+    .div-car-eleven-first {
+      height: 350px;
+      width: 620px;
+      background-color: rgb(255, 255, 255);
+      margin-left: 10px;
+
+    }
+
+    .div-car-eleven-first i {
+      font-size: 20px;
+      color: black;
+      margin: 10px;
+      position: absolute;
+    }
+
+    .div-car-eleven-first h1 {
+      font-size: 20px;
+      margin-top: 10px;
+      margin-left: 40px;
+    }
+
+    .div-car-eleven-first p {
+      font-size: 18px;
+      margin-left: 40px;
+      margin-top: 10px;
+
+    }
+
+    .div-car-eleven-second {
+      height: 350px;
+      width: 620px;
+      background-color: rgb(255, 255, 255);
+      margin-left: 10px;
+    }
+
+    .div-car-eleven-second i {
+      font-size: 20px;
+      color: black;
+      margin: 10px;
+      position: absolute;
+    }
+
+    .div-car-eleven-second h1 {
+      font-size: 20px;
+      margin-top: 10px;
+      margin-left: 40px;
+    }
+
+    .div-car-eleven-second p {
+      font-size: 18px;
+      margin-left: 40px;
+      margin-top: 10px;
+
+    }
+
+    .div-car-twelvel {
+      height: 500px;
+      width: 1263px;
+      box-sizing: border-box;
+      padding: 10px;
+      background-color: rgb(255, 255, 255);
+    }
+
+    .div-car-twelvel-first {
+      height: 480px;
+      width: 1200px;
+      background-color: aliceblue;
+      margin-left: 20px;
+      border-radius: 10px;
+    }
+
+    .div-car-twelvel-first img {
+      height: 480px;
+      width: 1200px;
+      border-radius: 10px;
+    }
+
+    .div-car-twelvel-first h1 {
+      position: absolute;
+      font-size: 40px;
+      color: white;
+      margin-left: 60px;
+      margin-top: 70px;
+    }
+
+    .div-car-twelvel-first p {
+      position: absolute;
+      margin-left: 60px;
+      color: white;
+      font-size: 18px;
+      margin-top: 170px;
+    }
+
+    .div-car-twelvel-first button {
+      height: 40px;
+      width: 150px;
+      background-color: white;
+      position: absolute;
+      margin-left: 60px;
+      margin-top: 250px;
+      border: 2px solid white;
+      border-radius: 10px;
+    }
+
+    .div-car-thirten {
+      height: 800px;
+      width: 1263px;
+      box-sizing: border-box;
+      background-color: rgb(255, 255, 255);
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .div-car-thirten-first {
+      height: 350px;
+      width: 610px;
+      background-color: rgb(255, 255, 255);
+      margin-top: 20px;
+      margin-left: 10px;
+      box-sizing: border-box;
+      margin-top: 50px;
+    }
+
+    .div-car-thirten-second {
+      height: 280px;
+      width: 610px;
+      background-color: rgb(255, 255, 255);
+    }
+
+    .div-car-thirten-second img {
+      height: 280px;
+      width: 610px;
+      transition: 1s;
+    }
+
+    .div-car-thirten-second img:hover {
+      transform: scale(0.9);
+    }
+
+    .div-car-thirten-third {
+      height: 70px;
+      width: 610px;
+      background-color: rgb(255, 255, 255);
+    }
+
+    .div-car-thirten-third h1 {
+      font-size: 25px;
+    }
+
+    #july {
+      font-size: 18px;
+      color: black;
+      margin: 7px;
+    }
+
+    #SCK {
+      font-size: 18px;
+      color: blue;
+      position: absolute;
+      margin-left: 110px;
+      margin-top: -27px;
+    }
+    #SC {
+      font-size: 18px;
+      color: blue;
+      position: absolute;
+      margin-left: 120px;
+      margin-top: -27px;
+    }
+    .div-car-fourteen{
+      height: 220px;
+      width: 1263px;
+      background-color: rgb(2, 2, 61);
+      display: flex;
+    }
+    .div-car-fourteen-first{
+      height: 210px;
+      width: 300px;
+      background-color: rgb(2, 2, 61);
+      margin: 10px;
+    }
+    #button{
+      height: 40px;
+      width: 230px;
+      background-color: rgb(195, 181, 209);
+      margin-top: 30px;
+      border-radius: 10px;
+    }
+     #button p{
+     padding-top: 10px;
+     margin-left: 10px;
+     color: white;
+     }
+      .div-car-fourteen-first p{
+        font-size: 18px;
+        color: white;
+        margin-top: 30px;
+        margin-left: 10px;
+      }
+      .div-car-fourteen-first select{
+        background-color: white;
+        height: 20px;
+        width: 20px;
+        margin-top: 20px;
+        margin-left: 100px;
+      }
+      .div-car-fiveteen{
+        height: 40px;
+        width: 1263px;
+        background-color: rgb(2, 2, 61);
+      }
+      .div-car-fiveteen p{
+        margin-left: 530px;
+        color: white;
+        margin-top: 30px;
+      }
+  </style>
+</head>
+
+<body>
+  <div class="div-car-main">
+    <div class="div-car-one">
+      <div class="div-car-one-one"><img src="C:\Users\HP\Downloads\download (13).png"
+          alt=""></div>
+      <div class="div-car-one-two">
+        <p>Help</p>
+      </div>
+      <div class="div-car-one-three"><button>English (UK) india₹INR</button></div>
+      <div class="div-car-one-three-four"><i class="fa-solid fa-heart"></i></div>
+      <div class="div-car-one-three-five"><button><b>Log In</b></button></div>
+    </div>
+    <div class="div-car-two">
+      <div class="div-car-two-one"><i class="fa-solid fa-plane"></i><button><b><a href="file:///C:/Users/HP/OneDrive/Desktop/project/skyscenner2/header.html">Flights</a></b></button></div>
+      <div class="div-car-two-two"><i class="fa-sharp fa-solid fa-bed"></i><button><b><a href="file:///C:/Users/HP/OneDrive/Desktop/project/skyscenner2/hotel.html">Hotels</a></b></button></div>
+      <div class="div-car-two-three"><i class="fa-solid fa-car-side"></i><button><b><a href="file:///C:/Users/HP/OneDrive/Desktop/project/skyscenner2/car.html">Car Hire</a></b></button></div>
+
+    </div>
+    <div class="div-car-three">
+      <div class="div-car-three-one">
+        <div class="car-one">
+          <p id="shift">Pick-up location</p>
+          <p id="airport">city,airport or station</p>
+        </div>
+        <div class="car-two">
+          <p id="shift">Pick-up date</p>
+          <p id="airport">30/12/2025</p>
+        </div>
+        <div class="car-three">
+          <p id="shift">Time</p>
+          <p id="airport">10:00</p>
+        </div>
+        <div class="car-four">
+          <p id="shift">Drop-off date</p>
+          <p id="airport">01/01/2026</p>
+        </div>
+        <div class="car-five">
+          <p id="shift">Time</p>
+          <p id="airport">10:00</p>
+        </div> -->
+        <!-- <div class="car-six"><b>Search</b></div> -->
+        <!-- <div class="div-car-four">
+          <input type="checkbox">
+          <p id="top">Driver aged between 25-70</p>
+          <input type="checkbox">
+          <p id="top">Return to a different location</p>
+        </div>
+      </div>
+      <h1>Find the best car rental deals</h1>
+      <img
+        src="https://content.skyscnr.com/m/2d3f5a921efb39b7/original/eyeem_109035009-jpg.jpg?crop=1680px:1374px&quality=60"
+        alt="">
+    </div>
+  </div>
+  <!-- <div class="div-car-five">
+    <p id="home"><u>Home</u></p>
+    <p id="hire">Car hire</p>
+  </div>
+
+  <div class="div-car-six">
+    <i class="fa-solid fa-car-side"></i>
+    <p id="search">search for cheap car rental in seconds- anywhere in <br>the world</p>
+    <i class="fa-solid fa-tag"></i>
+    <p id="search">Compare deals from trusted car hire proviers in one<br>place</p>
+    <i class="fa-solid fa-hotel"></i>
+    <p id="search">Rent a car with a flexible bbooking polcy or free <br>cancellation</p>
+  </div>
+  <div class="div-car-seveen">
+    <p>Car hire deals from ₹2,6760</p>
+    <p>The best New Delhi car hire providers</p>
+    <p>Fast Fascts</p>
+    <p>How to find the best deal </p>
+    <p>FAQs</p>
+    </div>
+  <div class="div-car-eight">
+    <h1>Popular car retal destinations</h1>
+  </div>
+  <div class="div-car-nine">
+    <div class="div-car-nine-one">
+      <div class="div-car-first"><img
+          src="https://content.skyscnr.com/m/7673a42b246f1a24/original/Dubai-UAE-Mar-2017-Brendan-van-Son-4.jpg?crop=960px:640px&quality=60"
+          alt=""></div>
+      <div class="div-car-second">
+        <div class="div-car-second-first">
+          <h1>Car hire in Dubai</h1>
+          <p>Most popular car type:Econnomy</p>
+        </div>
+        <div class="div-car-second-second">
+          <p id="from">From</p>
+          <h1> ₹1560</h1>
+          <p id="per">per day</p>
+        </div>
+      </div>
+    </div>
+    <div class="div-car-nine-one">
+      <div class="div-car-first"><img
+          src="https://content.skyscnr.com/m/5c70b3982534246d/original/GettyImages-486646673_doc.jpg?crop=960px:640px&quality=60"
+          alt=""></div>
+      <div class="div-car-second">
+        <div class="div-car-second-first">
+          <h1>Car hire in Mumbai</h1>
+          <p>Most popular car type:Economy</p>
+        </div>
+        <div class="div-car-second-second">
+          <p id="from">From</p>
+          <h1> ₹1780</h1>
+          <p id="per">per day</p>
+        </div>
+      </div>
+    </div>
+    <div class="div-car-nine-one">
+      <div class="div-car-first"><img
+          src="https://content.skyscnr.com/m/347d2f4e6fddeb57/original/GettyImages-181371125.jpg?crop=960px:640px&quality=60"
+          alt=""></div>
+      <div class="div-car-second">
+        <div class="div-car-second-first">
+          <h1>Car hire in Bengaluru</h1>
+          <p>Most popular car type:Economy</p>
+        </div>
+        <div class="div-car-second-second">
+          <p id="from">From</p>
+          <h1> ₹1979</h1>
+          <p id="per">per day</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="div-car-tin">
+    <h1>How to find the best car hire deal</h1>
+    <p>we're frequently named as the most trusted travel search site out there. we're free to use,and we'll do the hard
+      work for you by search hundreds of car hire companies, allowing you to instantly compare price and then book.
+      Here's how to get the most out of your car rental search.</p>
+  </div>
+  <div class="div-car-eleven">
+    <div class="div-car-eleven-first">
+      <i class="fa-solid fa-car-side"></i>
+      <h1>book now, cancel later</h1>
+      <p>There are many car and van hire options with flexible booking policies and free cancellation.so you can bag the
+        best with total flexility to change our plans ladt-minute if you need to.</p>
+      <i class="fa-solid fa-calendar"></i>
+      <h1>Rent a car in NewDelhi for a whole month</h1>
+      <p>Want to rent a car for almost a month ? Often,car rental companies avoid costly admin in berween pick-ups by
+        hiring out cars fr longer pwods.so see of monthly car rental is cheaper than the three weeks you needit for by
+        selecting 30 days.</p>
+      <i class="fas fa-gas-pump"></i>
+      <h1>Compare fuel policeis </h1>
+      <p>to save mmoney on topping up the tank beore you take off,look out for deals witha"full to full" fuel tank
+        policy</p>
+    </div>
+    <div class="div-car-eleven-second">
+      <i class="fa fa-key" aria-hidden="true"></i>
+      <h1>Skip the queues</h1>
+      <p>We call out keyess or self-service pic-up when you search with us. no keys to pick up r apperwork to fill in
+        means no queues. ust tuen up at your perferred car hire location, hop in and hit the road.</p>
+      <i class="fa-solid fa-charging-station"></i>
+      <h1>Go greener</h1>
+      <p>Limit your impact on this beautiful planet while you explore it. Filter by electric vehicles, which will be
+        charged up and ready to go when you pick them up, meaning no worries about fuel policies, either.</p>
+      <i class="fa-solid fa-location-pin"></i>
+      <h1>Look Further afield</h1>
+      <p>If you're on a budget, it's often cheaper to hop on public transport to a car rental pick-up location a little
+        further away.</p>
+    </div>
+  </div>
+  <div class="div-car-twelvel">
+    <div class="div-car-twelvel-first">
+      <button><b>Downloads the app</b></button>
+      <h1><b>Book car hire on <br> our app</b></h1>
+      <p>Find and compare the best deasls on car hire and <br> van rental anywhere in the world, from wherever <br> you
+        are in seconds.</p>
+      <img src="https://content.skyscnr.com/m/4d95bf83e8cb2ed1/Large-eyeem-100085002-156768999.jpg" alt="">
+    </div>
+  </div>
+  <div class="div-car-thirten">
+    <div class="div-car-thirten-first">
+      <div class="div-car-thirten-second"><img
+          src="https://www.beepit.gr/data/public/2025-11/best-things-to-do-with-beepit-car-rental.jpg" alt=""></div>
+      <div class="div-car-thirten-third">
+        <h1>Driving in Europe: everything you need to know</h1>
+        <p id="july">25 july 2024.</p>
+        <p id="SCK">SKyscanner</p>
+      </div>
+    </div>
+    <div class="div-car-thirten-first">
+      <div class="div-car-thirten-second"><img
+          src="https://www.leasinglife.com/wp-content/uploads/sites/7/2025/06/leasing.com-shutterstock_1668221479.jpg"
+          alt=""></div>
+      <div class="div-car-thirten-third">
+        <h1>Your complete guide to car hire excess insurance </h1>
+        <p id="july">25 july 2024.</p>
+        <p id="SCK">SKyscanner</p>
+      </div>
+    </div>
+    <div class="div-car-thirten-first">
+      <div class="div-car-thirten-second"><img
+          src="https://media.istockphoto.com/id/460454673/photo/sumburgh-head-lighthouse.jpg?s=612x612&w=0&k=20&c=cWygPC--fSHvWhb5EvkZo2qf0JDJC2rZncETHHSZo-g="
+          alt=""></div>
+      <div class="div-car-thirten-third">
+        <h1>The five best UK road trips</h1>
+        <p id="july">29 july 2024.</p>
+        <p id="SCK">SKyscanner</p>
+      </div>
+    </div>
+    <div class="div-car-thirten-first">
+      <div class="div-car-thirten-second"><img
+          src="https://content.skyscnr.com/m/4379143c27c303f6/original/skyscanner-car-seat-apac-img-new-01.jpg?resize=1224:auto"
+          alt=""></div>
+      <div class="div-car-thirten-third">
+        <h1>Car seat rules in india and around the world</h1>
+        <p id="july">10 march 2024.</p>
+        <p id="SC">SKyscanner</p>
+      </div>
+    </div>
+  </div>
+  <div class="div-car-fourteen">
+    <div class="div-car-fourteen-first"><div id="button"><p>India.English(UK).INR</p></div></div>
+      <div class="div-car-fourteen-first"><p>Help</p><p>Privacy Settings</p><p>Login</p></div>
+        <div class="div-car-fourteen-first"><p>Cookie policy </p><p>Privacy policy </p><p>Terms of service</p><p>Company deatlis</p></div>
+          <div class="div-car-fourteen-first"><p>Explore </p><p>Company</p><p>Partners</p><p>Trips</p></div>
+            <div class="div-car-fourteen-first">
+              <select></select>
+               <select></select>
+                <select></select>
+                 <select></select>
+                  <select></select>
+            </div>
+  </div>
+  <div class="div-car-fiveteen"><p>© Skyscanner Ltd 2002 – 2025</p></div> -->
+
+</body>
+</html>

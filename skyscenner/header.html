@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/c9bd00b655.js" crossorigin="anonymous"></script>
+
+    <style>
+        .main {
+            background-color: rgb(11, 11, 77);
+            height: 500px;
+        }
+
+        .header {
+            background-color: rgb(16, 16, 85);
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo img {
+            height: 100px;
+            width: 200px;
+        }
+
+        .headerone {
+            margin: 40px;
+            color: white;
+            width: 200px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .mainone {
+            background-color: rgb(16, 16, 85);
+            height: 50px;
+            display: flex;
+            margin-left: 50px;
+        }
+
+        .buttonone button {
+            height: 40px;
+            width: 100px;
+            box-sizing: border-box;
+            border-radius: 50px;
+            margin-right: 10px;
+        }
+
+        .maintext {
+            background-color: rgb(16, 16, 85);
+            color: white;
+            height: 50px;
+            margin-left: 50px;
+        }
+
+        .tickit {
+            margin-left: 50px;
+            position: relative;
+
+        }
+
+        .tickit input {
+            height: 60px;
+            width: 200px;
+
+        }
+
+        .tickit button {
+
+            box-sizing: border-box;
+            border-radius: 10px;
+            height: 70px;
+            width: 80px;
+            margin-left: 10px;
+        }
+
+        .checkbox {
+            width: 1100px;
+
+            background-color: rgb(16, 16, 85);
+            color: white;
+            box-sizing: border-box;
+            height: 40px;
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .checkboxone {
+            margin-left: 60px;
+            width: 150px;
+
+        }
+
+        .checkboxtwo {
+            margin-left: 50px;
+
+        }
+
+        .checkboxthree {
+            margin-left: 500px;
+
+        }
+
+        #box {
+            width: 200px;
+            height: 120px;
+            background: white;
+            border: 2px solid black;
+            display: none;
+            padding: 10px;
+            margin-top: 10px;
+            text-align: center;
+            margin-left: 50px;
+            position: absolute;
+            z-index: +2;
+        }
+
+        #button {
+            padding: 10px 20px;
+
+            color: black;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-left: 50px;
+            border-radius: 5px;
+        }
+
+        .div {
+            background-color: white;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            border: 2px solid black;
+            top: 10px;
+            left: 180px;
+
+            align-content: center;
+        }
+
+        .div i {
+            margin-left: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="logo"><img src="C:\Users\HP\Downloads\download (13).png" alt=""></div>
+            <div class="headerone">
+                <div class="help">Help</div>
+                <div class="earth"><i class="fa-solid fa-earth-americas"></i></div>
+                <div class="like"><i class="fa-solid fa-heart"></i></div>
+                <div class="login">Login<i class="fa-solid fa-circle-user"></i></div>
+            </div>
+        </div>
+        <div class="mainone">
+            <div class="buttonone"><button>Flights</button></div>
+            <div class="buttonone"><button>Hotels</button></div>
+            <div class="buttonone"><button>Car hire</button></div>
+        </div>
+        <div class="maintext">
+            <h1>Millions of cheap flights. One simple search.</h1>
+        </div>
+        <div class="select">
+            <button id="button">Return</button>
+            <div id="box">
+                <i class="fa-solid fa-right"></i> One way <br>
+                <i class="fa-sharp fa-solid fa-rotate-left"></i> Return <br>
+                <i class="fa-sharp fa-solid fa-arrow-u-turn-right-down"></i> Multi-city <br>
+            </div>
+            <script>
+                let btn = document.getElementById("button");
+                let box = document.getElementById("box");
+
+                btn.addEventListener("click", function () {
+                    if (box.style.display === "none") {
+                        box.style.display = "block";
+                        btn.textContent = "hide";
+                    }
+                    else {
+                        box.style.display = "none";
+                        btn.textContent = "Return";
+                    }
+                })
+            </script>
+
+            <div class="tickit">
+                <div class="div"><i class="fa-solid fa-left-right"></i></div>
+                <input type="text" placeholder="From">
+                <input type="text" placeholder="To">
+                <input type="text" placeholder="Depart">
+                <input type="text" placeholder="Return">
+                <input type="text" placeholder="Travellers and cabin class">
+                <button>Search</button>
+            </div>
+            <div class="checkbox">
+                <div class="checkboxone"><input type="checkbox">Add nearby airports <input type="checkbox">Direct
+                    flights</div>
+                <div class="checkboxtwo"><input type="checkbox">Add nearby airports</div>
+                <div class="checkboxthree"><input type="checkbox">Explore hotels</div><br>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

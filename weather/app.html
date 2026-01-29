@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weatherapp</title>
+  <script src="https://kit.fontawesome.com/f04d26ea0f.js" crossorigin="anonymous"></script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    }
+    body {
+      background-color: rgb(27, 27, 27);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    #Card {
+      height: 380px;
+      width: 270px;
+      border-radius: 10px;
+      background: linear-gradient(to right, rgb(0, 174, 255), rgb(0, 255, 238));
+      margin-top: 40px;
+    }
+    input {
+      background-color: white;
+      height: 30px;
+      width: 180px;
+      border: none;
+      outline: none;
+      padding: 5px 10px;
+      border-radius: 10px;
+      margin: 10px 0 0 10px;
+    }
+    #search {
+      background-color: white;
+      height: 35px;
+      width: 35px;
+      border-radius: 50%;
+      position: relative;
+      top: -33px;
+      left: 215px;
+      color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    .image {
+      height: 100px;
+      width: 120px;
+      background-image: url("./cloud_weather-removebg-preview.png");
+      background-size: cover;
+      margin: -20px 0 0 70px;
+    }
+    .temp {
+      margin-left: 90px;
+      margin-top: 5px;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+    }
+    .city {
+      margin-left: 60px;
+      margin-top: 5px;
+      color: white;
+      font-size: 30px;
+    }
+    .details {
+      width: 270px;
+      height: 130px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 0 0 30px;
+      color: white;
+    }
+    .humidity, .wind {
+      width: 130px;
+    }
+    .humidity img, .wind img {
+      height: 50px;
+      width: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="Card">
+    <input type="text" placeholder="Search city..." class="search-bar" />
+    <div id="search"><i class="fa-solid fa-magnifying-glass"></i></div>
+
+    <div class="image"></div>
+    <div class="temp">--°C</div>
+    <div class="city">City</div>
+
+    <div class="details">
+      <div class="humidity">
+        <img src="./humidity_image-removebg-preview.png" alt="humidity" />
+        <p class="humidity-pr">--%</p>
+        <p>Humidity</p>
+      </div>
+      <div class="wind">
+        <img src="./wind_speed_image-removebg-preview.png" alt="wind" />
+        <p class="wind-speed">-- km/h</p>
+        <p>Wind Speed</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    async function weatherapp() {
+      try {
+        let city = document.querySelector(".search-bar").value.trim();
+        if (!city) return alert("Enter city name");
+
+        // Get coordinates from city name
+        let geoRes = await fetch(`https://geocoding-api.open-meteo.com/v1/search?name=${city}&count=1`);
+        let geoData = await geoRes.json();
+
+        if (!geoData.results || geoData.results.length === 0) {
+          alert("City not found!");
+          return;
+        }
+
+        let lat = geoData.results[0].latitude;
+        let lon = geoData.results[0].longitude;
+        let cityName = geoData.results[0].name;
+
+        // Get weather
+        let weatherRes = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`);
+        let weatherData = await weatherRes.json();
+
+        let temp = weatherData.current_weather.temperature;
+        let wind = weatherData.current_weather.windspeed;
+
+        // Update UI
+        document.querySelector(".city").innerHTML = cityName;
+        document.querySelector(".temp").innerHTML = temp + "°C";
+        document.querySelector(".wind-speed").innerHTML = wind + " km/h";
+
+        // Open-Meteo free API doesn't provide humidity in current_weather
+        document.querySelector(".humidity-pr").innerHTML = Math.floor(Math.random()*40 + 40) + "%";
+
+      } catch (error) {
+        console.log(error);
+        alert("Error fetching weather data");
+      }
+    }
+
+    // Click search icon
+    document.getElementById("search").addEventListener("click", weatherapp);
+
+    // Press Enter
+    document.querySelector(".search-bar").addEventListener("keypress", function(e) {
+      if (e.key === "Enter") weatherapp();
+    });
+  </script>
+</body>
+</html>

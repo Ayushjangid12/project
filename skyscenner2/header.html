@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>skycanner</title>
+  <script src="https://kit.fontawesome.com/f04d26ea0f.js" crossorigin="anonymous"></script>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    /* ..........................login start......................................... */
+
+    .login-main {
+      height: 580px;
+      width: 550px;
+      background-color: rgb(255, 255, 255);
+      margin-left: 400px;
+      border-radius: 10px;
+      border: 1px solid black;
+      position: absolute;
+      display: none;
+    }
+
+    .login-one {
+      height: 100px;
+      width: 550px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 10px 10px 0px 0px;
+    }
+
+    .login-one img {
+      height: 80px;
+      width: 300px;
+
+    }
+
+    .login-two h1 {
+      font-size: 30px;
+      margin-left: 40px;
+
+    }
+
+    .login-three p {
+      font-size: 20px;
+      margin-left: 40px;
+      margin-top: 15px;
+    }
+
+    .login-four {
+      height: 55px;
+      width: 450px;
+      background-color: rgb(198, 191, 191);
+      margin-left: 40px;
+      margin-top: 15px;
+      border-radius: 7px;
+      color: black;
+      padding-top: 15px;
+      box-sizing: border-box;
+    }
+
+    .login-four b {
+      margin-left: 140px;
+      font-size: 20px;
+
+    }
+
+    .login-five {
+      height: 55px;
+      width: 450px;
+      background-color: rgb(198, 191, 191);
+      margin-left: 40px;
+      margin-top: 15px;
+      border-radius: 7px;
+      color: black;
+      padding-top: 15px;
+      box-sizing: border-box;
+    }
+
+    .login-five b {
+      margin-left: 190px;
+      font-size: 20px;
+
+    }
+
+    .login-six {
+      height: 55px;
+      width: 450px;
+      background-color: rgb(198, 191, 191);
+      margin-left: 40px;
+      margin-top: 15px;
+      border-radius: 7px;
+      color: black;
+      padding-top: 15px;
+      box-sizing: border-box;
+    }
+
+    .login-six b {
+      margin-left: 200px;
+      font-size: 20px;
+
+    }
+
+    .login-seveen {
+      height: 55px;
+      width: 450px;
+      background-color: rgb(198, 191, 191);
+      margin-left: 40px;
+      margin-top: 15px;
+      border-radius: 7px;
+      color: black;
+      padding-top: 15px;
+      box-sizing: border-box;
+    }
+
+    .login-seveen b {
+      margin-left: 205px;
+      font-size: 20px;
+
+    }
+
+    .login-eight input {
+      height: 20px;
+      width: 20px;
+      margin-left: 40px;
+      margin-top: 15px;
+    }
+
+    .login-eight p {
+      color: rgb(0, 0, 0);
+      position: absolute;
+      margin-left: 65px;
+      margin-top: 15px;
+      font-size: 20px;
+    }
+
+    .login-nine p {
+      color: rgb(114, 106, 106);
+      font-size: 20px;
+      margin-left: 40px;
+      margin-top: 20px;
+    }
+
+    /* ................................login end...................................... */
+
+    .div-main {
+      height: 2000px;
+      width: 100%;
+      box-sizing: border-box;
+      background-color: rgb(2, 2, 61);
+
+    }
+
+    .div-one {
+      /* background-color: rgb(19, 142, 44); */
+      height: 90px;
+      width: 1200px;
+      margin-left: 20px;
+      display: flex;
+    }
+
+    .div-one-one {
+      height: 90px;
+      width: 260px;
+      /* background-color: red; */
+
+    }
+
+    .div-one-one img {
+      height: 90px;
+      width: 260px;
+      /* background-color: black; */
+    }
+
+    .div-one-two {
+      font-size: 20px;
+      color: white;
+      margin-left: 700px;
+      margin-top: 40px;
+    }
+
+    .div-one-three i {
+      color: white;
+      font-size: 20px;
+      margin-top: 40px;
+      margin-left: 10px;
+    }
+
+    .div-one-four i {
+      font-size: 22px;
+      color: white;
+      margin-top: 40px;
+      margin-left: 10px;
+    }
+
+    .div-one-five i {
+      font-size: 23px;
+      color: white;
+      margin-top: 40px;
+      margin-left: 10px;
+    }
+
+    .div-one-six {
+      font-size: 20px;
+      color: white;
+      margin-left: 10px;
+      margin-top: 40px;
+
+    }
+.div-two {
+      /* background-color: brown; */
+      height: 80px;
+      width: 800px;
+      margin-left: 40px;
+
+    }
+
+    .div-flex {
+      display: flex;
+    }
+
+    .div-two-one button {
+      height: 40px;
+      width: 110px;
+      border-radius: 30px;
+      border: 1px solid skyblue;
+      box-sizing: border-box;
+      background-color: rgb(2, 2, 61);
+
+    }
+
+    .div-two-one b {
+      color: white;
+    }
+
+    .div-two-one i {
+      position: absolute;
+      font-size: 20px;
+      margin-left: 7px;
+      margin-top: 10px;
+      color: rgb(255, 255, 255);
+    }
+
+    .div-two-two button {
+      height: 40px;
+      width: 110px;
+      border-radius: 30px;
+      border: 1px solid white;
+      box-sizing: border-box;
+      background-color: rgb(2, 2, 61);
+
+    }
+
+    .div-two-two b {
+      color: white;
+    }
+
+    .div-two-two i {
+      position: absolute;
+      font-size: 20px;
+      margin-left: 7px;
+      margin-top: 10px;
+      color: rgb(255, 255, 255);
+    }
+
+    .div-two-three button {
+      height: 40px;
+      width: 110px;
+      border-radius: 30px;
+      border: 1px solid white;
+      box-sizing: border-box;
+      background-color: rgb(2, 2, 61);
+
+    }
+
+    .div-two-three p{
+      color: white;
+      margin-left: 20px;
+      /* margin-top: -20px; */
+      position: absolute;
+    }
+
+    .div-two-three i {
+      position: absolute;
+      font-size: 20px;
+      margin-left: 5px;
+      margin-top: 10px;
+      color: white;
+    }
+
+    .div-two-four {
+      /* background-color: black; */
+      height: 100px;
+      width: 800px;
+      margin-top: 20px;
+    }
+
+    .div-two-four b {
+      font-size: 30px;
+      color: rgb(255, 255, 255);
+      margin-top: 20px;
+    }
+
+    .div-three {
+      /* background-color: darkblue; */
+      height: 145px;
+      width: 1200px;
+      box-sizing: border-box;
+    }
+
+    .div-three-one button {
+      height: 40px;
+      width: 100px;
+      background-color: rgb(2, 2, 61);
+      border: 1px solid white;
+      color: white;
+      margin-left: 40px;
+      border-radius: 5px;
+      margin-top: 20px;
+
+    }
+
+    .div-three-one select {
+      position: absolute;
+      height: 15px;
+      width: 17px;
+      border: 2px solid rgb(2, 2, 61);
+      background-color: rgb(2, 2, 61);
+      color: white;
+      margin-left: 5px;
+    }
+
+    .div-three-two {
+      /* background-color: red; */
+      height: 75px;
+      width: 1200px;
+      margin-left: 30px;
+      display: flex;
+      margin-top: 10px;
+
+    }
+
+    .div-three-three-three {
+      height: 45px;
+      width: 45px;
+      border-radius: 50px;
+      position: absolute;
+      background-color: rgb(255, 255, 255);
+      margin-left: 196px;
+      margin-top: 14px;
+      border: 2.5px solid rgb(2, 2, 61);
+    }
+
+    .div-three-three-three i {
+      margin-top: 14px;
+      margin-left: 13px;
+    }
+
+    .div-three-three {
+      background-color: rgb(255, 255, 255);
+      height: 70px;
+      width: 220px;
+      margin: 3px;
+      border-radius: 10px 0px 0px 10px;
+    }
+
+    .div-three-three b {
+      color: rgb(86, 84, 84);
+      margin-left: 30px;
+      margin-top: 10px;
+
+    }
+
+    .div-three-three p {
+      color: rgb(17, 17, 17);
+      margin-left: 30px;
+
+
+    }
+
+    .div-three-four {
+      background-color: rgb(255, 255, 255);
+      height: 70px;
+      width: 220px;
+      margin: 3px;
+
+    }
+
+    .div-three-four b {
+      color: rgb(49, 48, 48);
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+
+    .div-three-four p {
+      color: rgb(35, 34, 34);
+      margin-left: 20px;
+
+
+    }
+
+    .div-three-five {
+      background-color: white;
+      height: 70px;
+      width: 220px;
+      margin: 3px;
+
+    }
+
+    .div-three-five b {
+      color: rgb(49, 48, 48);
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+
+    .div-three-five p {
+      color: rgb(35, 34, 34);
+      margin-left: 20px;
+
+
+    }
+
+    .div-three-six {
+      background-color: white;
+      height: 70px;
+      width: 220px;
+      margin: 3px;
+
+    }
+
+    .div-three-six b {
+      color: rgb(49, 48, 48);
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+.div-three-six p {
+      color: rgb(35, 34, 34);
+      margin-left: 20px;
+
+
+    }
+
+    .div-three-seveen {
+      background-color: white;
+      height: 70px;
+      width: 220px;
+      margin: 3px;
+      border-radius: 0px 10px 10px 0px;
+
+    }
+
+    .div-three-seveen b {
+      color: rgb(49, 48, 48);
+      margin-left: 5px;
+      margin-top: 10px;
+    }
+
+    .div-three-seveen p {
+      color: rgb(35, 34, 34);
+      margin-left: 20px;
+
+
+    }
+
+    .div-three-eight {
+      height: 70px;
+      width: 100px;
+      background-color: blue;
+      margin: 3px;
+      border-radius: 10px;
+      box-sizing: border-box;
+      padding-left: 15px;
+      padding-top: 20px;
+    }
+
+    .div-three-eight b {
+      font-size: 23px;
+      color: white;
+
+    }
+
+    .div-four {
+      height: 90px;
+      width: 1250px;
+      /* background-color: aquamarine; */
+      margin-left: 25px;
+      display: flex;
+      box-sizing: border-box;
+    }
+
+    .div-four-one {
+      /* background-color: black; */
+      height: 95px;
+      width: 220px;
+      margin: 2px;
+      box-sizing: border-box;
+
+    }
+
+
+    .div-four-two {
+      /* background-color: black; */
+      height: 95px;
+      width: 220px;
+      margin-left: 10px;
+      box-sizing: border-box;
+      margin-top: 2px;
+      display: flex;
+    }
+
+    .div-four-two input {
+      height: 20px;
+      width: 20px;
+      margin-top: 5px;
+    }
+
+    .div-four-two p {
+      font-size: 20px;
+      color: white;
+      margin-top: 5px;
+      margin-left: 5px;
+    }
+
+    .div-four-three {
+      /* background-color: black; */
+      height: 95px;
+      width: 220px;
+      margin-top: 2px;
+      margin-left: 460px;
+      box-sizing: border-box;
+      display: flex;
+    }
+
+    .div-four-three input {
+      height: 20px;
+      width: 20px;
+      margin-top: 5px;
+    }
+
+    .div-four-three p {
+      font-size: 20px;
+      color: white;
+      margin-top: 5px;
+      margin-left: 5px;
+    }
+
+    .div-four-one-one {
+      /* background-color: red; */
+      height: 45px;
+      width: 220px;
+      display: flex;
+    }
+
+    .div-four-one-one input {
+      height: 20px;
+      width: 20px;
+      margin-top: 5px;
+
+    }
+
+    .div-four-one-one p {
+      font-size: 20px;
+      color: white;
+      margin-top: 5px;
+      margin-left: 5px;
+    }
+
+    .div-four-one-two {
+      /* background-color: rgb(85, 53, 53); */
+      height: 45px;
+      width: 220px;
+      display: flex;
+    }
+
+    .div-four-one-two input {
+      height: 20px;
+      width: 20px;
+      margin-top: 5px;
+
+    }
+
+    .div-four-one-two p {
+      font-size: 20px;
+      color: white;
+      margin-top: 5px;
+      margin-left: 5px;
+    }
+
+    .div-five {
+      background-color: rgb(250, 250, 250);
+      height: 100px;
+      width: 100%;
+
+      display: flex;
+      box-sizing: border-box;
+    }
+
+    .div-five-one {
+      height: 80px;
+      width: 370px;
+      background-color: rgb(2, 2, 61);
+      margin-left: 30px;
+      margin-top: 10px;
+      border-radius: 10px;
+    }
+
+    .div-five-one i {
+      font-size: 30px;
+      color: white;
+      margin-left: 30px;
+      margin-top: 20px;
+    }
+
+    .div-five-one b {
+      font-size: 20px;
+      color: white;
+      margin-left: 15px;
+    }
+
+    .div-six {
+      height: 450px;
+      width: 100%;
+      background-color: rgb(253, 253, 253);
+      box-sizing: border-box;
+      padding-left: 90px;
+      padding-top: 20px;
+
+    }
+
+    .div-six-one {
+      height: 400px;
+      width: 1100px;
+      background-color: white;
+      box-sizing: border-box;
+      border-radius: 10px;
+
+
+    }
+
+    .div-six-one img {
+      height: 400px;
+      width: 1100px;
+      border-radius: 10px;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+    }
+
+    .div-six-one h1 {
+      font-size: 35px;
+      color: rgb(104, 86, 86);
+      position: absolute;
+      margin-left: 800px;
+      margin-top: 30px;
+    }
+
+    .div-six-one p {
+      position: absolute;
+      margin-left: 800px;
+      margin-top: 100px;
+
+
+    }
+.div-six-one button {
+      height: 30px;
+      width: 150px;
+      position: absolute;
+      margin-left: 800px;
+      margin-top: 170px;
+      border-radius: 5px;
+      border: 2px solid white;
+      background-color: white;
+    }
+
+    .div-seveen {
+      height: 35px;
+      width: 100%;
+      background-color: rgb(255, 255, 255);
+    }
+
+    .div-seveen-one h1 {
+      font-size: 30px;
+      color: black;
+      margin-left: 80px;
+    }
+
+    .div-eight {
+      height: 400px;
+      width: 100%;
+      background-color: teal;
+      display: flex;
+
+    }
+
+    .div-eight-one {
+      background-color: rgb(255, 255, 255);
+      height: 400px;
+      width: 634px;
+    }
+
+    .div-eight-two {
+      background-color: rgb(255, 255, 255);
+      height: 400px;
+      width: 634px;
+    }
+
+    .div-eight-one-one p {
+      font-size: 20px;
+      color: black;
+      margin-left: 80px;
+      margin-top: 20px;
+
+    }
+
+    .div-eight-one-one select {
+      height: 15px;
+      width: 20px;
+      position: absolute;
+      margin-left: 550px;
+      margin-top: 7px;
+      color: rgb(6, 5, 5);
+      border: 2px solid white;
+    }
+
+    hr {
+      width: 550px;
+      margin-left: 75px;
+      margin-top: 10px;
+
+    }
+
+    .div-eight-one-two p {
+      font-size: 20px;
+      color: black;
+      margin-left: 80px;
+      margin-top: 20px;
+
+    }
+
+    .div-eight-one-two select {
+      height: 15px;
+      width: 20px;
+      position: absolute;
+      margin-left: 550px;
+      margin-top: 7px;
+      color: rgb(3, 3, 3);
+      border: 2px solid white;
+    }
+
+    .div-eight-two-one select {
+      height: 15px;
+      width: 20px;
+      position: absolute;
+      margin-left: 550px;
+      margin-top: 7px;
+      color: rgb(6, 5, 5);
+      border: 2px solid white;
+
+    }
+
+    .div-eight-two-one p {
+      font-size: 20px;
+      color: black;
+      margin-left: 80px;
+      margin-top: 20px;
+
+    }
+
+    .div-nine {
+      height: 70px;
+      width: 100%;
+      background-color: rgb(255, 255, 255);
+
+    }
+
+    .div-nine-one h1 {
+      font-size: 30px;
+      color: black;
+      margin-left: 70px;
+
+    }
+
+    .div-nine-one select {
+      height: 15px;
+      width: 20px;
+      position: absolute;
+      margin-left: 1190px;
+      margin-top: 10px;
+      color: rgb(6, 5, 5);
+      border: 2px solid white;
+
+    }
+
+    .div-nine-two hr {
+      width: 1150px;
+
+    }
+
+    .div-ten {
+      background-color: rgb(255, 255, 255);
+      height: 250px;
+      width: 100%;
+
+    }
+
+    .div-ten-one h1 {
+      font-size: 30px;
+      color: black;
+      margin-left: 70px;
+
+    }
+
+    .div-ten-two {
+      height: 100px;
+      width: 100%;
+      background-color: rgb(255, 255, 255);
+      box-sizing: border-box;
+      display: flex;
+    }
+
+    .div-ten-three button {
+      height: 40px;
+      width: 80px;
+      border-radius: 10px;
+      border: 1px solid rgb(130, 123, 123);
+      margin-left: 70px;
+      margin-top: 10px;
+
+    }
+
+    .div-ten-four button {
+      height: 40px;
+      width: 90px;
+      border-radius: 10px;
+      border: 1px solid rgb(130, 123, 123);
+      margin-top: 10px;
+      margin-left: 7px;
+
+    }
+
+    .div-ten-five button {
+      height: 40px;
+      width: 90px;
+      border-radius: 10px;
+      border: 1px solid rgb(130, 123, 123);
+      margin-top: 10px;
+      margin-left: 7px;
+
+    }
+
+    .div-ten-six button {
+      height: 40px;
+      width: 90px;
+      border-radius: 10px;
+      border: 1px solid rgb(130, 123, 123);
+      margin-top: 10px;
+      margin-left: 7px;
+    }
+
+    /* .div-eleven {
+      background-color: rgb(2, 7, 61);
+      height: 200px;
+      width: 100%;
+      box-sizing: border-box;
+      display: flex;
+
+    }
+
+    .div-eleven-one button {
+      height: 30px;
+      width: 300px;
+      margin-left: 10px;
+      margin-top: 70px;
+
+    }
+
+    .div-eleven-one {
+      height: 100px;
+      width: 350px;
+      background-color: rgb(2, 2, 61);
+      margin: 10px;
+
+    }
+
+    .div-eleven-two {
+      height: 100px;
+      width: 200px;
+      background-color: rgb(2, 2, 61);
+
+      margin: 10px;
+    }
+.div-eleven-two p {
+      color: white;
+      margin-top: 10px;
+    }
+
+    .div-eleven-three {
+      height: 180px;
+      width: 200px;
+      background-color: rgb(2, 2, 61);
+      margin: 10px;
+    }
+
+    .div-eleven-three p {
+      color: white;
+      margin: 10px;
+    }
+
+    .div-eleven-four {
+      height: 170px;
+      width: 200px;
+      background-color: rgb(2, 2, 61);
+
+      margin: 10px;
+    }
+
+    .div-eleven-four p {
+      color: white;
+      margin: 10px;
+    }
+
+    .div-eleven-five {
+      height: 180px;
+      width: 100px;
+      background-color: rgb(2, 2, 61);
+      margin: 10px;
+    }
+
+    .div-eleven-five select {
+      height: 15px;
+      width: 20px;
+      margin: 10px;
+      background-color: rgb(2, 2, 61);
+      color: white;
+      border: 2px solid rgb(2, 2, 61);
+      ;
+
+    } */
+
+     .mainfooter {
+            background-color: rgb(2, 2, 61);
+            color: white;
+            height: 200px;
+
+        }
+
+        .mainfooterone {
+
+            font-size: larger;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .footerone button {
+            margin-top: 20px;
+            height: 30px;
+            width: 200px;
+        }
+        .mainfootertwo{
+            font-size: small;
+            text-align: center;
+        }
+        .footertwo ul li{
+          list-style: none;
+        }
+        .footerthree ul li{
+          list-style: none;
+        }
+        .footerfour ul li{
+          list-style: none;
+        }
+
+
+
+
+    /* .div-twelve {
+      height: 100px;
+      width: 100%;
+      background-color: rgb(2, 2, 61);
+
+    }
+
+    .div-twelve p {
+      color: white;
+      text-align: center;
+      font-size: 13px;
+    } */
+
+    #box {
+      height: 130px;
+      width: 300px;
+      background-color: rgb(255, 255, 255);
+      position: absolute;
+      z-index: +2;
+      margin-left: 40px;
+      border-radius: 10px;
+      display: none;
+      padding: 10px;
+      text-align: center;
+
+    }
+
+    #btn {
+      padding: 10px 20px;
+      background-color: rgb(2, 2, 63);
+      color: rgb(255, 255, 255);
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      margin-left: 50px;
+      border-radius: 5px;
+      border: 2px solid white;
+    }
+
+    #box i {
+      font-size: 20px;
+
+      margin-left: -250px;
+    }
+
+    #box p {
+      margin-left: -150px;
+      margin-top: -20px;
+      /* position: absolute; */
+    }
+  </style>
+</head>
+
+<body>
+  <!-- login...................... -->
+  <div class="login-main">
+    <div class="login-one"><img src="C:\Users\ACS\Downloads\Screenshot_2025-12-15_214316-removebg-preview.png" alt="">
+    </div>
+    <div class="login-two">
+      <h1>Get the full experience</h1>
+    </div>
+    <div class="login-three">
+      <p>Track prices,make trip planning easir and enoy faster<br> booking.</p>
+    </div>
+    <div class="login-four"><b>Continue with email</b></div>
+    <div class="login-five"><b>Facebook</b></div>
+    <div class="login-six"><b>Google</b></div>
+    <div class="login-seveen"><b>Apple</b></div>
+    <div class="login-eight">
+      <p>Remember me</p><input type="checkbox">
+    </div>
+    <div class="login-nine">
+      <p>By continuing you agree to uor <u>Terms of service</u> and <u>privacy</u></p>
+    </div>
+  </div>
+  <!-- ...................login -->
+
+  <div class="div-main">
+    <div class="div-one">
+      <div class="div-one-one"><img src="C:\Users\HP\Downloads\download (13).png"
+          alt=""></div>
+      <div class="div-one-two"><a href="file:///C:/Users/ACS/Desktop/proect/skyscanner/help.html"><p style="color: white;">help</p></a></div>
+      <div class="div-one-three"><i class="fa-solid fa-earth-americas"></i></div>
+      <div class="div-one-four"><i class="fa-solid fa-heart"></i></div>
+      <div class="div-one-five"><i class="fa-solid fa-circle-user"></i></div>
+      <!-- login start -->
+<!-- ............................... -->
+      <div class="div-one-six" onclick="loginhideshow()"> Log in</div>
+    </div>
+    <!-- login end -->
+    <div class="div-two">
+      <div class="div-flex">
+        <div class="div-two-one"><i class="fa-solid fa-plane"></i><button><a href="file:///C:/Users/HP/OneDrive/Desktop/project/skyscenner2/header.html"></p>Flights</p></a></b></button></div>
+        <div class="div-two-two"><i class="fa-sharp fa-solid fa-bed"></i><button><a href="file:///C:/Users/HP/OneDrive/Desktop/project/skyscenner2/hotel.html"></p>Hotels</p></a></b></button></div>
+        <div class="div-two-three"><i class="fa-solid fa-car-side"></i><button><a href="file:///C:/Users/HP/OneDrive/Desktop/project/skyscenner2/car.html"></p>Car hare</p></a></button></div>
+      </div>
+      <div class="div-two-four"><b>Millions of cheap flights. One simple search.</b></div>
+    </div>
+    <div class="div-three">
+      <div class="div-three-one">
+        <button id="btn">Return</button>
+        <div id="box">
+          <i class="fa-solid fa-arrow-right"></i>
+          <p>One Way</p><br>
+          <i class="fas fa-sync-alt"></i>
+          <p>Return</p><br>
+          <i class="fas fa-undo"></i>
+          <p>Multi-city</p><br>
+        </div>
+      </div>
+      <script>
+        let btn = document.getElementById("btn");
+        let box = document.getElementById("box");
+
+        btn.addEventListener("click", function () {
+          if (box.style.display === "none") {
+            box.style.display = "block";
+            btn.textContent = "Return";
+          }
+          else {
+            box.style.display = "none";
+            btn.textContent = "Return";
+          }
+        })
+
+      </script>
+      <div class="div-three-two">
+        <div class="div-three-three-three"><i class="fas fa-exchange"></i></div>
+        <div class="div-three-three"><b>from</b><br><br>
+          <p>Jaipur(JAI)</p>
+        </div>
+        <div class="div-three-four"><b>To</b><br><br>
+          <p>Country,city or airport</p>
+        </div>
+        <div class="div-three-five"><b>Depart</b><br><br>
+          <p>Add date</p>
+        </div>
+        <div class="div-three-six"><b>Return</b><br><br>
+          <p>Add date</p>
+        </div>
+        <div class="div-three-seveen"><b>Travellers and cabin class</b><br><br>
+          <p>1 Adult,Economy</p>
+        </div>
+        <div class="div-three-eight"><b>Search</b></div>
+      </div>
+    </div>
+<div class="div-four">
+      <div class="div-four-one">
+        <div class="div-four-one-one"><input type="checkbox">
+          <p>Add nearby airports</p>
+        </div>
+        <div class="div-four-one-two"><input type="checkbox">
+          <p>Direct Flights</p>
+        </div>
+      </div>
+      <div class="div-four-two"><input type="checkbox">
+        <p>Add nearby airports</p>
+      </div>
+      <div class="div-four-three"><input type="checkbox">
+        <p>Find Hotels</p>
+      </div>
+    </div>
+    <div class="div-five">
+      <div class="div-five-one"><i class="fa-sharp fa-solid fa-bed"></i><b>Hotels</b></div>
+      <div class="div-five-one"><i class="fa-solid fa-car-side"></i><b>Car hire</b></div>
+      <div class="div-five-one"><i class="fa-solid fa-earth-americas"></i><b>Explore everywhere</b></div>
+    </div>
+    <div class="div-six">
+      <div class="div-six-one">
+        <h1>Save on your<br>next stay</h1><br>
+        <p>Get together with the best hand-picked deals<br> from around the world.</p><button><b>Find your
+            room</b></button><img
+          src="https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1363844060/image_1363844060.jpg?io=getty-c-crop-16-9"
+          alt="">
+      </div>
+    </div>
+    <div class="div-seveen">
+      <div class="div-seveen-one">
+        <h1>Booking Flights with Skyscanner</h1>
+      </div>
+    </div>
+    <div class="div-eight">
+      <div class="div-eight-one">
+        <div class="div-eight-one-one"><select></select>
+          <p>How does SKyscanner work?</p>
+        </div>
+        <hr>
+        <div class="div-eight-one-two"><select></select>
+          <p>How can I find the cheapest using SKycanner?</p>
+        </div>
+        <hr>
+        <div class="div-eight-one-two"><select></select>
+          <p>Where should I book a flight to right now?</p>
+        </div>
+        <hr>
+        <div class="div-eight-one-two"><select></select>
+          <p>Do I book my Flight with SKyscanner?</p>
+        </div>
+        <hr>
+        <div class="div-eight-one-two"><select></select>
+          <p>What happens after I have booked my flight?</p>
+        </div>
+        <hr>
+      </div>
+
+      <div class="div-eight-two">
+        <div class="div-eight-two-one"><select></select>
+          <p>Does SKyscanner do hotels too?</p>
+        </div>
+        <hr>
+        <div class="div-eight-two-one"><select></select>
+          <p>What about car hire?</p>
+        </div>
+        <hr>
+        <div class="div-eight-two-one"><select></select>
+          <p>What's a Price Alert?</p>
+        </div>
+        <hr>
+        <div class="div-eight-two-one"><select></select>
+          <p>CAn I book a flexible flight ticket?</p>
+        </div>
+        <hr>
+        <div class="div-eight-two-one"><select></select>
+          <p>Can I book Flights that emit less co<sub>2</sub>?</p>
+        </div>
+        <hr>
+      </div>
+
+    </div>
+    <div class="div-nine">
+      <div class="div-nine-one"><select></select>
+        <h1>Our international sites</h1>
+      </div>
+      <div class="div-nine-two">
+        <hr>
+      </div>
+
+    </div>
+
+    <div class="div-ten">
+      <div class="div-ten-one">
+        <h1>Start planning your adventure</h1>
+      </div>
+      <div class="div-ten-two">
+        <div class="div-ten-three"><button>City</button></div>
+        <div class="div-ten-four"><button>Airport</button></div>
+        <div class="div-ten-five"><button>Region</button></div>
+        <div class="div-ten-six"><button>Country</button></div>
+
+      </div>
+    </div>
+    <!-- <div class="div-eleven">
+      <div class="div-eleven-one"><button>India. English(UK) ₹INR</button></div>
+      <div class="div-eleven-two">
+        <p>Help</p>
+        <p>privacy setting</p>
+        <p>log In</p>
+</div>
+      <div class="div-eleven-three">
+        <p>Cookies police</p>
+        <p>Privacy police</p>
+        <p>Terms of service</p>
+        <p>Company Details</p>
+      </div>
+      <div class="div-eleven-four">
+        <p>Explore </p>
+        <p>Company</p>
+        <p> Partners</p>
+        <p>Trips</p>
+        <p>International Sites</p>
+      </div>
+
+      <div class="div-eleven-five">
+        <select></select><br>
+        <select></select><br>
+        <select></select><br>
+        <select></select><br>
+        <select></select>
+      </div>
+    </div> -->
+    
+
+    <div class="mainfooter">
+        <div class="mainfooterone">
+            <div class="footerone"><button>India.English(UK).$INR</button></div>
+            <div class="footertwo">
+                <ul>
+                    <li>Help</li>
+                    <li>Privacy Settings</li>
+                    <li>Log in</li>
+                </ul>
+            </div>
+            <div class="footerthree">
+                <ul>
+                    <li>Cookie policy</li>
+                    <li>Privacy policy</li>
+                    <li>Terms of service</li>
+                    <li>Company Details</li>
+                </ul>
+            </div>
+            <div class="footerfour">
+                <ul>
+                    <li>Explore</li>
+                    <li>Company</li>
+                    <li>Partners</li>
+                    <li>Trips</li>
+                    <li>International Sites</li>
+                </ul>
+            </div>
+        </div>
+        <div class="mainfootertwo">Cheap flight booking from anywhere, to everywhere <br>© Skyscanner Ltd 2002 – 2025</div>
+    </div>
+
+
+    <!-- <div class="div-twelve">
+      <p>Cheap flight booking from anywhre,to everywhere</p>
+      <p>© Skyscanner Ltd 2002 – 2025</p>
+    </div> -->
+
+  </div>
+
+
+  <script>
+    // login .........................start.......................
+    let loginmain = document.getElementsByClassName("login-main")[0]
+    function loginhideshow() {
+      if (loginmain.style.display === "none" || loginmain.style.display === "") {
+        loginmain.style.display = "block"
+        // document.getElementsByClassName("div-main")[0].style.filter= 'blur(2px)'
+        
+        // loginmain.style.opacity = "1"
+      }
+      else {
+        loginmain.style.display = "none"
+      }
+    }
+    // login ..............................end.....................
+  </script>
+</body>
+
+</html>

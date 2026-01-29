@@ -1,0 +1,174 @@
+export default function App() {
+  return (
+    <div style={containerStyle}>
+      <h1 style={{ textAlign: "center" }}>React Mini Workshop — Day 3 & 4</h1>
+
+      <div style={{ marginTop: 16, marginBottom: 16 }}>
+        <p>
+          This small project demonstrates <strong>useState</strong>, event handling (onClick, onChange), list rendering
+          with <strong>keys</strong>, and conditional rendering using <code>?</code> and ternary patterns.
+        </p>
+      </div>
+
+      <div style={grid}>
+        <div>
+          <Counter />
+          <div style={{ height: 16 }} />
+          <LivePreview />
+          {/*<ToggleSwitch/>*/}
+        </div>
+
+        <div>
+          <TodoList />
+          <div style={{ height: 16 }} />
+          <Card title="Quick Exercises">
+            <ol>
+              <li>Modify Counter to increase by 5 when Shift+Click</li>
+              <li>Add edit functionality to TodoList</li>
+              <li>Make Card accept a color prop and style itself</li>
+            </ol>
+          </Card>
+        </div>
+      </div>
+
+      <footer style={{ marginTop: 20, textAlign: "center", color: "#666" }}>
+        <small>By MD Coaching HUB @2025</small>
+      </footer>
+    </div>
+  );
+}
+
+
+
+
+
+import React, { useState } from "react";
+
+// ---------- Small UI helpers ----------
+const containerStyle = {
+  fontFamily: "Inter, Roboto, Arial, sans-serif",
+  maxWidth: 1500,
+  margin: "auto auto",
+  padding: 16,
+};
+const grid = { display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 };
+const section = { background: "#fff", padding: 16, borderRadius: 8, boxShadow: "0 2px 8px rgba(0,0,0,0.06)" };
+
+// ---------- Card component (reusable) ----------
+function Card({ title, children }) {
+  return (
+    <div style={{ ...section }}>
+      <h3 style={{ marginTop: 0 }}>{title}</h3>
+      <div>{children}</div>
+    </div>
+  );
+}
+
+// ---------- Counter component (useState + events) ----------
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <Card title="Counter (useState + onClick)">
+      <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+        <button onClick={() => setCount((c) => c - 1)}>-</button>
+        <div style={{ minWidth: 80, textAlign: "center", fontSize: 20 }}>{count}</div>
+        <button onClick={() => setCount((c) => c + 1)}>+</button>
+        <button onClick={() => setCount(0)}>Reset</button>
+      </div>
+      <p style={{ marginTop: 12, color: "#555" }}>Tip: state updates trigger automatic UI re-render.</p>
+    </Card>
+  );
+}
+
+// ---------- LivePreview component (input change events) ----------
+function LivePreview() {
+  const [text, setText] = useState("");
+
+  return (
+    <Card title="Live Preview (input onChange)">
+      <input
+        value={text}
+        onChange={(e) => setText(e.target.value)}
+        placeholder="Type something..."
+        style={{ width: "100%", padding: 8, fontSize: 16 }}
+      />
+      <div style={{ marginTop: 12 }}>
+        <strong>Preview:</strong>
+        <div style={{ marginTop: 8, color: text ? "#111" : "#888" }}>{text || "(empty)"}</div>
+      </div>
+    </Card>
+  );
+}
+
+// ---------- TodoList (lists, keys, conditional rendering) ----------
+function TodoList() {
+  const [task, setTask] = useState("");
+  const [todos, setTodos] = useState([
+    { id: 1, text: "Learn useState" },
+    { id: 2, text: "Build small projects" },
+  ]);
+
+  function addTask() {
+    const t = task.trim();
+    if (!t) return;
+    const next = { id: Date.now(), text: t };
+    setTodos((prev) => [next, ...prev]);
+    setTask("");
+  }
+
+  function removeTask(id) {
+    setTodos((prev) => prev.filter((t) => t.id !== id));
+  }
+
+  return (
+    <Card title="Todo List (map, keys, conditional)">
+      <div style={{ display: "flex", gap: 8, marginBottom: 12 }}>
+        <input
+          value={task}
+          onChange={(e) => setTask(e.target.value)}
+          placeholder="New task"
+          style={{ flex: 1, padding: 8 }}
+          onKeyDown={(e) => e.key === "Enter" && addTask()}
+        />
+        <button onClick={addTask}>Add</button>
+      </div>
+
+      {/* conditional rendering: show empty message when no todos */}
+      {todos.length === 0 ? (
+        <div style={{ color: "#777" }}>No tasks yet. Add your first todo!</div>
+      ) : (
+        <ul style={{ paddingLeft: 18, margin: 0 }}>
+          {todos.map((t) => (
+            <li key={t.id} style={{ display: "flex", justifyContent: "space-between", padding: "6px 0" }}>
+              <span>{t.text}</span>
+              <div style={{ display: "flex", gap: 8 }}>
+                <button onClick={() => removeTask(t.id)}>Delete</button>
+              </div>
+            </li>
+          ))}
+        </ul>
+      )}
+
+      <p style={{ marginTop: 12, color: "#555" }}>
+        <strong>Notes:</strong> Use stable keys (IDs) to help React track items. Avoid using array index for keys when order can change.
+      </p>
+    </Card>
+  );
+}
+
+function ToggleSwitch() {
+  const [isOn, setIsOn] = useState(false);
+  
+  return (
+    <div>
+      <h2>Light is {isOn ? 'ON 💡' : 'OFF 🌑'}</h2>
+      <button onClick={() => setIsOn(!isOn)}>
+        Toggle
+      </button>
+    </div>
+  );
+}
+
+// ---------- Main App ----------
+export default function App() {

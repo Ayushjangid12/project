@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Education Hub</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        header { background-color: #333; color: white; text-align: center; padding: 1rem; }
+        nav { background-color: #444; padding: 0.5rem; }
+        nav a { color: white; margin: 0 1rem; text-decoration: none; }
+        section { padding: 2rem; max-width: 800px; margin: auto; }
+        .topic { border: 1px solid #ddd; padding: 1rem; margin: 1rem 0; background-color: white; }
+        footer { text-align: center; padding: 1rem; background-color: #333; color: white; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to IT Education Hub</h1>
+        <p>Learn IT skills from basics to advanced levels.</p>
+    </header>
+    <nav>
+        <a href="#programming">Programming</a>
+        <a href="#networking">Networking</a>
+        <a href="#security">Cybersecurity</a>
+        <a href="#resources">Resources</a>
+    </nav>
+    <section id="programming">
+        <h2>Programming</h2>
+        <div class="topic">
+            <h3>Python Basics</h3>
+            <p>Start with variables, loops, and functions. <a href="https://www.python.org" target="_blank">Learn more</a></p>
+        </div>
+        <div class="topic">
+            <h3>JavaScript for Web Dev</h3>
+            <p>Build interactive websites. <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">Tutorials</a></p>
+        </div>
+    </section>
+    <section id="networking">
+        <h2>Networking</h2>
+        <div class="topic">
+            <h3>Introduction to TCP/IP</h3>
+            <p>Understand how data travels over networks. <a href="https://www.cisco.com" target="_blank">Resources</a></p>
+        </div>
+    </section>
+    <section id="security">
+        <h2>Cybersecurity</h2>
+        <div class="topic">
+            <h3>Basic Encryption</h3>
+            <p>Learn about protecting data. <a href="https://owasp.org" target="_blank">Guides</a></p>
+        </div>
+    </section>
+    <section id="resources">
+        <h2>Additional Resources</h2>
+        <ul>
+            <li><a href="https://www.coursera.org" target="_blank">Coursera IT Courses</a></li>
+            <li><a href="https://www.edx.org" target="_blank">edX Free IT Programs</a></li>
+            <li>Downloadable PDFs: [Link to your files]</li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2023 IT Education Hub. Contact: info@iteduhub.com</p>
+    </footer>
+    <script>
+        // Simple JS for interactivity (e.g., alert on topic click)
+        document.querySelectorAll('.topic').forEach(topic => {
+            topic.addEventListener('click', () => {
+                alert('Explore this topic further!');
+            });
+        });
+    </script>
+</body>
+</html>

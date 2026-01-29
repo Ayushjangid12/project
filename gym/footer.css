@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 50px 70px;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 180px;
+}
+
+.logo {
+  color: #ff6a00;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.logo span {
+  color: #fff;
+  font-size: 14px;
+  display: block;
+  margin-top: -5px;
+}
+
+.social-icons i {
+  margin-right: 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.link {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.download-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.store-btn {
+  width: 150px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}

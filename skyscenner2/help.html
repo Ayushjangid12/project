@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/f04d26ea0f.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .help-main {
+            height: 1218px;
+            background-color: blue;
+        }
+
+        .help-one {
+            height: 150px;
+            width: 1200px;
+            background-color: blue;
+            margin-left: 20px;
+            padding-top: 10px;
+            box-sizing: border-box;
+            display: flex;
+        }
+
+        .help-logo {
+            height: 100px;
+            width: 230px;
+            background-color: blue;
+        }
+
+        .help-logo img {
+            height: 90px;
+            width: 200px;
+        }
+
+        .help-text p {
+            margin-top: 50px;
+            margin-left: 400px;
+            font-size: 18px;
+            color: white;
+        }
+
+        #help-btn {
+            height: 30px;
+            width: 200px;
+            background-color: blue;
+            border: 1px solid white;
+            margin-top: 40px;
+            margin-left: 30px;
+            border-radius: 10px;
+            display: flex;
+        }
+
+        #help-btn p {
+            color: white;
+            margin: 5px;
+        }
+
+        #help-btn i {
+            margin-top: 5px;
+            margin-left: 110px;
+        }
+
+        #help-language {
+            height: 300px;
+            width: 200px;
+            background-color: white;
+            position: absolute;
+            margin-left: 890px;
+            margin-top: 70px;
+            display: none;
+        }
+
+        #help-language p {
+            font-size: 18px;
+            margin-left: 30px;
+        }
+
+        .heart-icon  {
+            font-size: 30px;
+            color: white;
+            margin-left: 30px;
+            margin-top: 43px;
+        }
+
+        .help-two {
+            height: 100px;
+            width: 1263px;
+            background-color: blue;
+
+        }
+
+        .help-two h1 {
+            font-size: 100px;
+            color: white;
+            margin-left: 200px;
+
+        }
+
+
+        .help-search input {
+            height: 50px;
+            width: 550px;
+            background-color: rgb(255, 255, 255);
+            margin-top: 20px;
+            margin-left: 300px;
+            border-radius: 16px;
+            border: 2px solid white;
+        }
+
+        .help-search input::placeholder {
+            font-size: 30px;
+            padding-left: 230px;
+        }
+
+        .help-search i {
+            font-size: 30px;
+            color: rgb(13, 13, 15);
+            position: absolute;
+            margin-left: 800px;
+            margin-top: 25px;
+
+        }
+
+        .help-three p {
+            font-size: 20px;
+            color: white;
+            margin-left: 450px;
+            margin-top: 25px;
+        }
+
+        .help-four {
+            height: 70px;
+            width: 1263px;
+            background-color: blue;
+            display: flex;
+        }
+
+        #btn-two {
+            height: 35px;
+            width: 120px;
+            margin-left: 10px;
+            margin-top: 10px;
+            background-color: rgb(255, 255, 255);
+            color: blue;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+
+        #btn-three {
+            height: 35px;
+            width: 120px;
+            margin-left: 10px;
+            margin-top: 10px;
+            background-color: rgb(2, 2, 61);
+            color: white;
+            border: 1px solid rgb(2, 2, 61);
+            border-radius: 5px;
+        }
+
+
+        #btn-one {
+            height: 35px;
+            width: 120px;
+            margin-left: 410px;
+            margin-top: 10px;
+            border-radius: 5px;
+            background-color: rgb(2, 2, 61);
+            color: white;
+            border: 1px solid rgb(2, 2, 61);
+        }
+        .help-five {
+            height: 100px;
+            width: 1263px;
+            background-color: rgb(255, 255, 255);
+            padding-top: 10px;
+        }
+
+        .help-five hr {
+            width: 1100px;
+            margin-left: 20px;
+            background-color: black;
+            margin-top: 10px;
+        }
+
+        .help-five h1 {
+            font-size: 27px;
+            color: rgb(84, 82, 82);
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .help-five i {
+            position: absolute;
+            margin-left: 1100px;
+            font-size: 20px;
+            margin-top: -25px;
+            color: blue;
+        }
+
+        .help-six {
+            height: 65px;
+            width: 1263px;
+            background-color: white;
+
+        }
+
+        .help-six-one h1 {
+            font-size: 50px;
+            color: black;
+            margin-left: 20px;
+
+        }
+
+        .help-seveen {
+            height: 500px;
+            width: 1263px;
+            background-color: rgb(255, 255, 255);
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .help-seveen-one {
+            height: 230px;
+            width: 600px;
+            background-color: rgb(255, 255, 255);
+            margin-left: 20px;
+            border: 1px solid black;
+            border-radius: 10px;
+
+        }
+
+        .help-seveen-one i {
+            font-size: 50px;
+            color: blue;
+            margin-top: 40px;
+            margin-left: 20px;
+        }
+
+        .help-seveen-one h1 {
+            font-size: 30px;
+            color: black;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .help-seveen-one p {
+            font-size: 20px;
+            color: blue;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+         .help-seveen-one s{
+            font-size: 25px;
+            color: blue;
+            position: absolute;
+            margin-left: 120px;
+            margin-top: -20px;
+         }
+        .help-eight{
+            height: 100px;
+            width: 1263px;
+            background-color: rgb(2, 2, 61);
+        }
+         #Terms{
+            font-size: 19px;
+            margin-left: 20px;
+            padding-top: 50px;
+            color: white;
+         }
+         #ltd{
+            font-size: 19px;
+            margin-left: 20px;
+            color: white;
+         }
+    </style>
+</head>
+
+<body>
+    <div class="help-main">
+        <div class="help-one">
+            <div class="help-logo"><img src="C:\Users\HP\Downloads\download (13).png"
+                    alt=""></div>
+            <div class="help-text">
+                <p>Takasin sivustoon skyscanner.fi</p>
+            </div>
+            <div id="help-btn" onclick="key()">
+                <p>English</p><i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div id="help-language">
+                <p>English</p><br>
+                <p>Hindi</p><br>
+                <p>Spanish</p><br>
+                <p>French</p><br>
+                <p>German</p><br>
+                <p>Chinese (Mandarin)</p><br>
+                <p>Arabic</p><br>
+                <p>Russian</p><br>
+            </div>
+            <div class="heart-icon"><i class="fa-solid fa-heart"></i></div>
+        </div>
+        <div class="help-two">
+            <h1>How can we help?</h1>
+        </div>
+        <div class="help-search"><i class="fa-solid fa-magnifying-glass"></i><input type="" placeholder="search"></div>
+        <div class="help-three">
+            <p>Need help with something else?</p>
+        </div>
+        <div class="help-four">
+            <button id="btn-one"><i class="fa-solid fa-plane"></i><b>Flight</b></button>
+            <button id="btn-two"><i class="fa-sharp fa-solid fa-bed"></i><b>Hotel</b></button>
+            <button id="btn-three"><i class="fa-solid fa-car-side"></i><b>Car</b></button>
+        </div>
+        <div class="help-five">
+            <hr>
+            <h1>Got a question about a booking?</h1>
+            <i class="fa-solid fa-angle-down"></i>
+            <hr>
+        </div>
+        <div class="help-six">
+            <div class="help-six-one">
+                <h1>Browse arrticles b topic</h1>
+            </div>
+
+        </div>
+        <div class="help-seveen">
+            <div class="help-seveen-one"><i class="fa-solid fa-magnifying-glass"></i>
+                <h1>Searching</h1>
+                <p>Learn more</p>
+                <s class="fa-solid fa-arrow-right"></s>
+            </div>
+            <div class="help-seveen-one"><i class="fa-solid fa-money-bill"></i>
+                <h1>Prices</h1>
+                <p>Learn more</p>
+                  <s class="fa-solid fa-arrow-right"></s>
+            </div>
+            <div class="help-seveen-one"><i class="fa-solid fa-plane"></i>
+                <h1>Booking</h1>
+                <p>Learn more</p>
+                  <s class="fa-solid fa-arrow-right"></s>
+            </div>
+            <div class="help-seveen-one"><i class="fa fa-briefcase"></i>
+                <h1>Traveling</h1>
+                <p>Learn more</p>
+                  <s class="fa-solid fa-arrow-right"></s>
+            </div>
+        </div>
+        <div class="help-eight"><p id="Terms">Cookie Policy Privacy Policy Terms of Service</p><p id="ltd">© 2002-2024 Skyscanner Ltd</p></div>
+    </div>
+
+
+    <script>
+        let rok = document.getElementById("help-btn")
+        let kon = document.getElementById("help-language")
+
+        function key() {
+            if (kon.style.display === 'none' || kon.style.display === '') {
+                kon.style.display = 'block'
+            }
+            else {
+                kon.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+
+</html>

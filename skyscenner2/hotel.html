@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/f04d26ea0f.js" crossorigin="anonymous"></script>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .div-hotel-main {
+      height: 3000px;
+      background-color: rgb(2, 2, 61);
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .div-hotel-one {
+      background-color: rgb(2, 2, 61);
+      height: 70px;
+      width: 1250px;
+      display: flex;
+    }
+
+    .div-hotel-one-one img {
+      height: 90px;
+      width: 260px;
+      /* background-color: black; */
+    }
+
+    .div-hotel-one-two p {
+      font-size: 18px;
+      color: white;
+      margin-left: 550px;
+      margin-top: 35px;
+
+
+    }
+
+    .div-hotel-one-three {
+      height: 33px;
+      width: 250px;
+      background-color: rgb(83, 83, 128);
+      border-radius: 5px;
+      margin-top: 30px;
+      margin-left: 10px;
+
+    }
+
+    .div-hotel-one-three button {
+      height: 20px;
+      width: 200px;
+      margin-left: 25px;
+      margin-top: 5px;
+      color: white;
+      background-color: rgb(83, 83, 128);
+      border: 2px solid rgb(83, 83, 128);
+      margin-top: 7px;
+
+    }
+
+    .div-hotel-one-three-four i {
+      font-size: 27px;
+      color: white;
+      margin-top: 30px;
+      margin-left: 10px;
+    }
+
+    .div-hotel-one-three-five button {
+      height: 33px;
+      border: 2px solid white;
+      border-radius: 4px;
+      margin-top: 30px;
+      width: 75px;
+      margin-left: 10px;
+    }
+
+    .div-hotel-two {
+      height: 60px;
+      width: 1250px;
+      background-color: rgb(2, 2, 61);
+      display: flex;
+    }
+
+    .div-hotel-two-one button {
+      height: 40px;
+      width: 100px;
+      border: 2px solid white;
+      border-radius: 10px;
+      margin: 10px;
+      background-color: rgb(2, 2, 61);
+      color: white;
+    }
+
+    .div-hotel-two-one i {
+      font-size: 20px;
+      color: white;
+      margin-left: 12px;
+      margin-top: 20px;
+      position: absolute;
+    }
+
+    .div-hotel-two-two button {
+      height: 40px;
+      width: 100px;
+      border: 2px solid white;
+      color: white;
+      margin: 10px;
+      border-radius: 10px;
+      background-color: rgb(2, 2, 61)
+    }
+
+    .div-hotel-two-two i {
+      font-size: 20px;
+      color: white;
+      position: absolute;
+      margin-left: 14px;
+      margin-top: 20px;
+    }
+
+    .div-hotel-two-three button {
+      height: 40px;
+      width: 100px;
+      border-radius: 10px;
+      border: 2px solid white;
+      margin: 10px;
+      background-color: rgb(2, 2, 61);
+      color: white;
+    }
+
+    .div-hotel-two-three b {
+      margin-left: 15px;
+    }
+
+    .div-hotel-two-three i {
+      font-size: 20px;
+      color: white;
+      margin-top: 20px;
+      margin-left: 13px;
+      position: absolute;
+    }
+
+    .div-hotel-three {
+      height: 560px;
+      width: 1263px;
+      background-color: white;
+    }
+
+    .div-hotel-three img {
+      height: 560px;
+      width: 1263px;
+    }
+
+    .div-hotel-three h1 {
+      position: absolute;
+      font-size: 60px;
+      color: white;
+      margin-top: 200px;
+      margin-left: 40px;
+
+
+    }
+
+    .div-hotel-three-one {
+      height: 150px;
+      width: 1250px;
+      background-color: rgb(2, 2, 61);
+      position: absolute;
+      margin-top: 280px;
+      margin-left: 5px;
+      border-radius: 10px;
+      display: flex;
+    }
+
+    .div-hotel-three-one-one {
+      height: 100px;
+      width: 390px;
+      background-color: white;
+      margin-left: 10px;
+      margin-top: 10px;
+      border-radius: 10px 0px 0px 10px;
+    }
+
+    .div-hotel-three-one-two {
+      height: 100px;
+      width: 220px;
+      background-color: white;
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+
+    .div-hotel-three-one-three {
+      height: 100px;
+      width: 220px;
+      background-color: white;
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+.div-hotel-three-one-four {
+      height: 100px;
+      width: 220px;
+      background-color: white;
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+
+    .div-hotel-three-one-five button {
+      height: 100px;
+      width: 140px;
+      background-color: blue;
+      margin-left: 15px;
+      margin-top: 10px;
+      border-radius: 30px;
+      border: 2px solid blue;
+      font-size: 30px;
+    }
+
+    .div-hotel-three-one-one p {
+      margin-left: 5px;
+      margin-top: 20px;
+      color: rgb(91, 89, 89);
+    }
+
+    #loaction {
+      color: rgb(91, 89, 89);
+    }
+
+    .div-hotel-three-one-two p {
+      margin-left: 5px;
+      margin-top: 20px;
+      color: rgb(91, 89, 89);
+    }
+
+    .div-hotel-three-one-three p {
+      margin-left: 5px;
+      margin-top: 20px;
+      color: rgb(91, 89, 89);
+    }
+
+    .div-hotel-three-one-four p {
+      margin-left: 5px;
+      margin-top: 20px;
+      color: rgb(91, 89, 89);
+    }
+
+    .div-hotel-three-one-six input {
+      height: 20px;
+      width: 18px;
+      position: absolute;
+      margin-top: 115px;
+      margin-left: 10px;
+      background-color: white;
+    }
+
+    .div-hotel-three-one-six p {
+      position: absolute;
+      color: white;
+      margin-top: 115px;
+      margin-left: 35px;
+    }
+
+    #search-box {
+      position: absolute;
+      height: 18px;
+      width: 20px;
+      margin-top: 117px;
+      margin-left: 160px;
+    }
+
+    #start {
+      position: absolute;
+      margin-left: 185px;
+      padding-top: 2px;
+    }
+
+    .div-hotel-four {
+      height: 70px;
+      width: 1263px;
+      background-color: rgb(255, 255, 255);
+    }
+
+    .div-hotel-four p {
+      margin-left: 10px;
+      padding-top: 30px;
+    }
+
+    #hotel {
+      color: rgb(59, 55, 55);
+      margin-left: 70px;
+      margin-top: 1px;
+      position: absolute;
+
+    }
+
+    .div-hotel-five {
+      height: 150px;
+      width: 1263px;
+      background-color: rgb(255, 255, 255);
+      display: flex;
+    }
+
+    #div-hotel-five-one p {
+      margin-left: 30px;
+      padding-top: 20px;
+    }
+
+    #div-hotel-five-one i {
+      font-size: 20px;
+      position: absolute;
+      color: black;
+      margin-top: 22px;
+    }
+
+    #div-hotel-five-two p {
+      margin-left: 100px;
+      padding-top: 20px;
+    }
+
+    #div-hotel-five-two i {
+      font-size: 20px;
+      position: absolute;
+      color: black;
+      margin-top: 22px;
+      margin-left: 70px;
+    }
+
+    #div-hotel-five-three p {
+      margin-left: 100px;
+      padding-top: 20px;
+    }
+
+    #div-hotel-five-three i {
+      font-size: 20px;
+      position: absolute;
+      color: black;
+      margin-top: 22px;
+      margin-left: 70px;
+    }
+
+    .div-hotel-six {
+      height: 550px;
+      width: 1263px;
+      background-color: rgb(255, 255, 255);
+      padding-top: 60px;
+
+    }
+
+    .div-hotel-six-one {
+      height: 500px;
+      width: 1200px;
+      background-color: white;
+      margin-left: 30px;
+      border-radius: 10px;
+    }
+
+    .div-hotel-six-one img {
+      height: 500px;
+      width: 1200px;
+      border-radius: 10px;
+    }
+
+    .div-hotel-six-one h1 {
+      position: absolute;
+      color: white;
+      font-size: 50px;
+      margin-left: 50px;
+      margin-top: 100px;
+    }
+
+    .div-hotel-six-one p {
+      position: absolute;
+      color: white;
+      margin-left: 50PX;
+      margin-top: 280px;
+    }
+
+    .div-hotel-six-one button {
+      height: 40px;
+      width: 150px;
+      color: black;
+      position: absolute;
+      margin-left: 50px;
+      margin-top: 370px;
+      border-radius: 10px;
+      border: 2px solid white;
+      background-color: white;
+    }
+
+    .div-hotel-seveen {
+      height: 100px;
+      width: 1263px;
+      background-color: rgb(255, 255, 255);
+    }
+
+    .div-hotel-seveen h1 {
+      font-size: 30px;
+      padding-top: 50px;
+      margin-left: 30px;
+    }
+
+    .div-hotel-eight {
+      height: 100px;
+      width: 1263px;
+      background-color: rgb(255, 255, 255);
+      padding-top: 30px;
+      box-sizing: border-box;
+    }
+
+    .div-hotel-eight h1 {
+      margin-left: 30px;
+      font-size: 25px;
+    }
+.div-hotel-eight p {
+      margin-left: 30px;
+      margin-top: 10px;
+    }
+
+    .div-hotel-nine {
+      height: 70px;
+      width: 1263px;
+      background-color: rgb(255, 255, 255);
+      display: flex;
+
+    }
+
+    #div-hotel-nine-one button {
+      height: 40px;
+      width: 130px;
+      margin-left: 30px;
+      background-color: rgb(255, 255, 255);
+      color: black;
+      border: 1px solid black;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .div-hotel-tin {
+      height: 450px;
+      width: 1263px;
+      background-color: rgb(255, 255, 255);
+      display: flex;
+      box-sizing: border-box;
+      /* border: 2px solid black; */
+    }
+
+    #div-hotel-tin-one {
+      height: 400px;
+      width: 400px;
+      background-color: rgb(171, 154, 154);
+      margin-left: 10px;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-sizing: border-box;
+      border: 1px solid black;
+    }
+
+    #div-hotel-tin-one-one {
+      height: 150px;
+      width: 400px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 10px 10px 0px 0px;
+      border: 1px solid black;
+
+    }
+
+    #div-hotel-tin-one-one img {
+      height: 150px;
+      width: 400px;
+      border-radius: 10px 10px 0px 0px;
+    }
+
+    #div-hotel-tin-one-two {
+      height: 150px;
+      width: 400px;
+      background-color: rgb(255, 255, 255);
+      padding-top: 10px;
+      box-sizing: border-box;
+      border: 1px solid black;
+
+    }
+
+    #div-hotel-tin-one-two h1 {
+      font-size: 20px;
+      margin-left: 10px;
+
+    }
+
+    #div-hotel-tin-one-two p {
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+
+    #div-hotel-tin-one-three {
+      height: 100px;
+      width: 400px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 0px 0px 10px 10px;
+      border: 1px solid black;
+
+    }
+
+    #div-hotel-tin-one-three h1 {
+      font-size: 20px;
+      margin-left: 320px;
+      padding-top: 40px;
+    }
+
+    #div-hotel-tin-one-three p {
+      margin-left: 325px;
+    }
+
+    .div-hotel-eleven {
+      height: 210px;
+      width: 1263px;
+      background-color: rgb(255, 255, 255);
+    }
+
+    .div-hotel-eleven h1 {
+      font-size: 30px;
+      margin-left: 10px;
+      padding-top: 150px;
+    }
+
+    .div-hotel-twevel {
+      height: 110px;
+      width: 1263px;
+      background-color: rgb(255, 255, 255);
+      display: flex;
+    }
+
+    .div-hotel-twevel-one {
+      height: 100px;
+      width: 300px;
+      background-color: rgb(255, 255, 255);
+      margin: 5px;
+    }
+
+    .div-hotel-twevel-one i {
+      font-size: 20px;
+      margin-left: 10px;
+      margin-top: 10px;
+
+    }
+
+    .div-hotel-twevel-one h1 {
+      font-size: 20px;
+    }
+
+    .div-hotel-threetin {
+      background-color: rgb(255, 255, 255);
+      height: 200px;
+      width: 1263px;
+
+    }
+
+    .div-hotel-threetin h1 {
+      color: rgb(0, 0, 0);
+      margin-left: 10px;
+    }
+
+    .div-hotel-threetin h5 {
+      color: black;
+      font-size: 25px;
+      margin-left: 10px;
+      margin-top: 10px;
+
+    }
+
+
+    #choaching {
+      height: 80px;
+      width: 620px;
+      display: none;
+      margin-left: 10px;
+      background-color: rgb(255, 255, 255);
+    }
+
+    #choaching p {
+      font-size: px;
+    }
+
+    #arrow {
+      font-size: 20px;
+      /* text-align: center; */
+      display: inline-block;
+      transition: 0.2s;
+      margin-left: 610px;
+      position: absolute;
+      margin-top: -25px;
+    }
+
+    .div-hotel-threeetin-two hr {
+      width: 620px;
+      margin-left: 10px;
+    }
+
+    #choaching-one {
+      height: 80px;
+      width: 620px;
+      /* display: none; */
+      margin-left: 10px;
+      background-color: rgb(255, 255, 255);
+    }
+
+    #arrow-one {
+      font-size: 20px;
+      /* text-align: center; */
+      display: inline-block;
+      transition: 0.2s;
+      margin-left: 610px;
+      position: absolute;
+      margin-top: -25px;
+    }
+.footer {
+      height: 300px;
+      width: 1263px;
+      background-color: rgb(2, 2, 61);
+      display: flex;
+    }
+    .footer-one{
+      height: 250px;
+      width: 230px;
+      background-color: rgb(2, 2, 61);
+      margin: 10px;
+    }
+    .footer-btn{
+      height: 40px;
+      width: 200px;
+      background-color: rgb(157, 166, 219);
+      color: white;
+      border-radius: 10px;
+      margin-top: 30px;
+      margin-left: 20px;
+    }
+     .footer-btn p{
+      padding-top: 10px;
+      color: white;
+     }
+     .footer-one p{
+      font-size: 18px;
+      margin: 20px;
+      color: white;
+     }
+      .footer-one select{
+        height: 20px;
+        width: 20px;
+          margin-left: 30px;
+          margin-top: 10px;
+          background-color: white;
+          border: 1px solid white;
+      }
+      .footer-last{
+        height: 20px;
+        width: 1263px;
+        background-color: rgb(2, 2, 61);
+      }
+      .footer-last p{
+        margin-left: 500px;
+        color: white;
+      }
+  </style>
+</head>
+
+<body>
+  <div class="div-hotel-main">
+    <div class="div-hotel-one">
+      <div class="div-hotel-one-one"><img src="C:\Users\HP\Downloads\download (13).png"
+          alt=""></div>
+      <div class="div-hotel-one-two">
+        <p>Help</p>
+      </div>
+      <div class="div-hotel-one-three"><button>English (UK) india₹INR</button></div>
+      <div class="div-hotel-one-three-four"><i class="fa-solid fa-heart"></i></div>
+      <div class="div-hotel-one-three-five"><button><b>Log In</b></button></div>
+    </div>
+    <div class="div-hotel-two">
+      <div class="div-hotel-two-one"><i class="fa-solid fa-plane"></i><button><b><a href="file:///C:/Users/HP/OneDrive/Desktop/project/skyscenner2/header.html">Flights</a></b></button></div>
+      <div class="div-hotel-two-two"><i class="fa-sharp fa-solid fa-bed"></i><button><b><a href="file:///C:/Users/HP/OneDrive/Desktop/project/skyscenner2/hotel.html">Hotels</a></b></button></div>
+      <div class="div-hotel-two-three"><i class="fa-solid fa-car-side"></i><button><b><a href="file:///C:/Users/HP/OneDrive/Desktop/project/skyscenner2/car.html">Car Hire</a></b></button></div>
+
+    </div>
+    <div class="div-hotel-three">
+
+      <div class="div-hotel-three-one">
+        <div class="div-hotel-three-one-six"><input type="checkbox">
+          <p>Free Cancellation</p><input id="search-box" type="checkbox">
+          <p id="start">4 starts +</p>
+        </div>
+        <div class="div-hotel-three-one-one">
+          <p>Where do you want to go?
+          <p id="loaction">Enter a destination or hotel name</p>
+          </p>
+        </div>
+        <div class="div-hotel-three-one-two">
+          <p>Check-in<br><br>12/12/2025 </p>
+        </div>
+        <div class="div-hotel-three-one-three">
+          <p>Check-out <br><br>13/12/2025</p>
+        </div>
+        <div class="div-hotel-three-one-four">
+          <p>Guests and rooms<br><br>2 adults,1room</p>
+        </div>
+        <div class="div-hotel-three-one-five"><button>search</button></div>
+      </div>
+      <h1>Find the right hotel today </h1>
+      <img src="https://studio.openweaver.com/preassets/mediaassets/d35113e7e48d45bd93574d71c53aa7c6/image/slide-5.jpg"
+        alt="">
+
+
+
+    </div>
+    <div class="div-hotel-four">
+      <p id="hotel">Hotels</p>
+      <p><u>Home</u></p>
+    </div>
+
+
+    <div class="div-hotel-five">
+      <div id="div-hotel-five-one"><i class="fa-solid fa-magnifying-glass"></i>
+        <p>Find the best-value hotel for your dates,sesarch by <br>price or preferences</p>
+      </div>
+      <div id="div-hotel-five-two"><i class="fa-solid fa-tag"></i>
+        <p>Compare hotel deals across hundreds of providers,all <br>in one pacee</p>
+      </div>
+      <div id="div-hotel-five-three"><i class="fa-solid fa-hotel"></i>
+        <p>Look out for hotel with free cancellation or excellent <br>ratings</p>
+      </div>
+    </div>
+
+
+    <div class="div-hotel-six">
+<div class="div-hotel-six-one">
+        <button><b>See hotel deals </b></button>
+        <p>We've pulled together some top hotel deals,so<br>you can find an amazing room at an even better <br> price.
+        </p>
+        <h1>Save on your <br>next hotel<br> bookking</h1>
+        <img
+          src="https://content.skyscnr.com/m/51af5dc2109230c1/original/HotelDeals_GraphicPromo_2096x800_Desktop_35-_EN-UK.jpg?imbypass=true"
+          alt="">
+      </div>
+    </div>
+
+    <div class="div-hotel-seveen">
+      <h1>Compare hotel across your favourite brands </h1>
+    </div>
+
+
+    <div class="div-hotel-eight">
+      <h1>Hotel in your home country</h1>
+      <p>Your next adventure may be closer than you think.Discover hotels just beyond your doorstep</p>
+    </div>
+
+
+
+    <div class="div-hotel-nine">
+      <div id="div-hotel-nine-one"><button>Mumbai</button><button>New
+          Delhi</button><button>Bengaluru</button><button>Jaipur</button><button>Hyderabad</button></div>
+    </div>
+
+
+    <div class="div-hotel-tin">
+      <div id="div-hotel-tin-one">
+        <div id="div-hotel-tin-one-one"><img
+            src="https://content.skyscnr.com/available/2330218756/2330218756_392x116.jpg" alt=""></div>
+        <div id="div-hotel-tin-one-two">
+          <h1>The Taj Mahal Palace,Mumbai</h1>
+          <p>14.39 km from city centre</p>
+          <p>4.8/5 Excellent 223 reviews</p>
+        </div>
+        <hr>
+        <div id="div-hotel-tin-one-three">
+          <h1>₹33,245</h1>
+          <p>Per night</p>
+        </div>
+      </div>
+      <div id="div-hotel-tin-one">
+        <div id="div-hotel-tin-one-one"><img
+            src="https://content.skyscnr.com/available/1977244629/1977244629_392x116.jpg" alt=""></div>
+        <div id="div-hotel-tin-one-two">
+          <h1>Taj lands End </h1>
+          <p>5.25 km from city centre</p>
+          <p>4.66/5 EXcellent 103266 reviews</p>
+        </div>
+        <hr>
+        <div id="div-hotel-tin-one-three">
+          <h1>₹25,204</h1>
+          <p>per night</p>
+        </div>
+      </div>
+      <div id="div-hotel-tin-one">
+        <div id="div-hotel-tin-one-one"><img
+            src="https://content.skyscnr.com/available/2330747762/2330747762_392x116.jpg" alt=""></div>
+        <div id="div-hotel-tin-one-two">
+          <h1>ITC Maratha, a Luxury Collage</h1>
+          <p>66.39 km from city centre </p>
+          <p>47/5 Excellent 6519 reviews</p>
+        </div>
+        <hr>
+        <div id="div-hotel-tin-one-three">
+          <h1>₹20,403</h1>
+          <p>per night</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="div-hotel-eleven">
+      <h1>Fast Facts</h1>
+      <p>Sllep easy, armed with the stuff that's good to knows before you go.</p>
+    </div>
+    <div class="div-hotel-twevel">
+      <div class="div-hotel-twevel-one"><i class="fa-solid fa-hotel"></i>
+        <p>Hotel brands to choose from </p>
+        <h1>60+</h1>
+      </div>
+      <div class="div-hotel-twevel-one"><i class="fa-sharp fa-solid fa-location-dot"></i>
+        <p>Hotel destinations to explore</p>
+        <h1>5,000+</h1>
+      </div>
+      <div class="div-hotel-twevel-one"><i class="fa-sharp fa-solid fa-bed"></i>
+        <p>Hotel available worldwide</p>
+        <h1>3.2 million</h1>
+      </div>
+    </div>
+
+
+
+    <div class="div-hotel-threetin">
+      <div class="div-hotel-threeetin-one">
+        <h1>FAQs</h1>
+      </div>
+      <div class="div-hotel-threeetin-two">
+        <h5>How can I find the besst-value hotels on SKyscanner?</h5>
+        <div id="james" onclick="hideshow()"><span id="arrow"><i class="fa-solid fa-angle-down"></i></span></div>
+        <div id="choaching">
+          <p>Search your chosen destination for your selected dates and select ‘Best’. To be clear, by ‘Best’, we’re
+            talking hotels we’ve gathered based on value for money, reviews, and location.
+          </p>
+        </div>
+
+        <script>
+          let james = document.getElementById("james")
+          let choaching = document.getElementById("choaching")
+          let arrow = document.getElementById("arrow")
+function hideshow() {
+            if (choaching.style.display === 'none'  choaching.style.display === ) {
+              choaching.style.display = 'block'
+              arrow.style.transform = "rotate(180deg)"
+            }
+            else {
+              choaching.style.display = 'none'
+              arrow.style.transform = "rotate(0deg)"
+            }
+          }
+        </script>
+        <hr>
+
+        <div class="div-hotel-threeetin-three">
+          <h5>HOw does SKYscanner rank hotels?</h5>
+          <div id="khushwinder" onclick="hideshow$one()"><span id="arrow-one"><i
+                class="fa-solid fa-angle-down"></i></span></div>
+          <div id="choaching-one">
+            <p>There’s no secret recipe – just a stellar search operation. We scan all the top hotel provider sites,
+              including Booking.com, Agoda and Trip.com to name a few. From there, we compare prices and show you the
+              best options.
+
+            </p>
+
+          </div>
+          <script>
+            let khushi = document.getElementById("khushwinder")
+            let khushboo = document.getElementById("choaching-one")
+            let chiku = document.getElementById("arrow-one")
+            function hideshow$one() {
+              if (khushboo.style.display === 'none'  khushboo.style.display === 'none') {
+                khushboo.style.display = 'block'
+                chiku.style.transform = "rotate(180deg)"
+              }
+              else {
+                khushboo.style.display = 'none'
+                chiku.style.transform = 'rotate(0deg)'
+              }
+            }
+          </script>
+
+
+        </div>
+        <hr>
+
+
+        <div class="footer">
+          <div class="footer-one"><div class="footer-btn"><p>Indi.English(UK).INR</p></div></div>
+          <div class="footer-one"><p>Help</p><p>Privacy setings</p><p>Login</p></div>
+          <div class="footer-one"><p>Cookie policy </p><p>Privacy policy</p><p>Terms of service</p><p>Company Details</p></div>
+          <div class="footer-one"><p>Explore</p><p>Company</p><p>Partners</p><p>Trips</p></div>
+          <div class="footer-one">
+            <select></select><br>
+             <select></select><br>
+              <select></select><br>
+               <select></select><br>
+                <select></select>
+          </div>
+        
+        </div>
+          <div class="footer-last"><p>© Skyscanner Ltd 2002 – 2025</p></div>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+
+</html>

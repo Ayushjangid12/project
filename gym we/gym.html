@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/f04d26ea0f.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+
+        }
+
+        .question-main {
+
+            width: 1263px;
+            background-color: rgb(108, 78, 39);
+            padding-top: 20px;
+        }
+
+        .question-one h1 {
+            font-size: 23px;
+            color: white;
+            margin-left: 20px;
+            cursor: pointer;
+
+        }
+
+
+        #question-one {
+            background-color: red;
+            margin-top: 30px;
+            width: 500px;
+
+        }
+
+
+        #arrow-one i {
+            font-size: 23px;
+            color: rgb(255, 255, 255);
+            position: absolute;
+            margin-top: -25px;
+            margin-left: 700px;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        #row-one hr {
+            width: 700px;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        #answer-first {
+            height: 106px;
+            width: 800px;
+            background-color: rgb(44, 116, 179);
+            display: none;
+        }
+
+        #answer-first p {
+            font-size: 18px;
+            color: white;
+            margin-left: 50px;
+        }
+
+        .question-two h1 {
+            font-size: 23px;
+            color: white;
+            margin-left: 20px;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+
+        #arrow-second i {
+            font-size: 23px;
+            color: rgb(255, 255, 255);
+            position: absolute;
+            margin-top: -25px;
+            margin-left: 700px;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        #answer-second {
+            height: 165px;
+            width: 800px;
+            background-color: rgb(44, 116, 179);
+            display: none;
+        }
+
+        #answer-second p {
+            font-size: 18px;
+            color: white;
+            margin-left: 50px;
+        }
+
+        #row-second hr {
+            width: 700px;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .question-three h1 {
+            font-size: 23px;
+            color: white;
+            margin-left: 20px;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+
+        #answer-third {
+            height: 165px;
+            width: 800px;
+            background-color: rgb(44, 116, 179);
+            display: none;
+        }
+
+        #arrow-third i {
+            font-size: 23px;
+            color: rgb(255, 255, 255);
+            position: absolute;
+            margin-top: -25px;
+            margin-left: 700px;
+            display: inline-block;
+
+        }
+
+        #answer-third p {
+            font-size: 18px;
+            color: white;
+            margin-left: 50px;
+        }
+
+        #row-third hr {
+            width: 700px;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        #question-four h1 {
+            font-size: 23px;
+            color: white;
+            margin-left: 20px;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+
+        #arrow-fourth i {
+            font-size: 23px;
+            color: rgb(255, 255, 255);
+            position: absolute;
+            margin-top: -25px;
+            margin-left: 700px;
+            display: inline-block;
+
+        }
+
+        #answer-fourth {
+            height: 310px;
+            width: 800px;
+            background-color: rgb(44, 116, 179);
+            display: none;
+        }
+
+        #answer-fourth p {
+            font-size: 18px;
+            color: white;
+            margin-left: 50px;
+        }
+
+        #row-fourth hr {
+            width: 700px;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .question-five h1 {
+            font-size: 23px;
+            color: white;
+            margin-left: 20px;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+
+        #arrow-fiveth i {
+            font-size: 23px;
+            color: rgb(255, 255, 255);
+            position: absolute;
+            margin-top: -25px;
+            margin-left: 700px;
+            display: inline-block;
+
+        }
+
+        #answer-fiveth {
+            height: 100px;
+            width: 800px;
+            background-color: rgb(44, 116, 179);
+            display: none;
+        }
+
+        #answer-fiveth p {
+            font-size: 18px;
+            color: white;
+            margin-left: 50px;
+        }
+
+        #row-fiveth hr {
+            width: 700px;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .question-six h1 {
+            font-size: 23px;
+            color: white;
+            margin-left: 20px;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+
+        #arrow-sixth i {
+            font-size: 23px;
+            color: rgb(255, 255, 255);
+            position: absolute;
+            margin-top: -25px;
+            margin-left: 700px;
+            display: inline-block;
+
+        }
+
+        #answer-sixth {
+            height: 100px;
+            width: 800px;
+            background-color: rgb(44, 116, 179);
+            display: none;
+        }
+
+        #answer-sixth p {
+            font-size: 18px;
+            color: white;
+            margin-left: 50px;
+        }
+
+        #row-sixth hr {
+            width: 700px;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .question-seveen h1 {
+            font-size: 23px;
+            color: white;
+            margin-left: 20px;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+
+        #arrow-seveenth i {
+            font-size: 23px;
+            color: rgb(255, 255, 255);
+            position: absolute;
+            margin-top: -25px;
+            margin-left: 700px;
+            display: inline-block;
+
+        }
+
+        #answer-seveenth {
+            height: 100px;
+            width: 800px;
+            background-color: rgb(44, 116, 179);
+            display: none;
+        }
+
+        #answer-seveenth p {
+            font-size: 18px;
+            color: white;
+            margin-left: 50px;
+        }
+
+        #row-seveenth hr {
+            width: 700px;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .question-eight h1 {
+            font-size: 23px;
+            color: white;
+            margin-left: 20px;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+
+        #arrow-eightth i {
+            font-size: 23px;
+            color: rgb(255, 255, 255);
+            position: absolute;
+            margin-top: -25px;
+            margin-left: 700px;
+            display: inline-block;
+
+        }
+
+        #answer-eightth {
+            height: 100px;
+            width: 800px;
+            background-color: rgb(44, 116, 179);
+            display: none;
+        }
+
+        #answer-eightth p {
+            font-size: 18px;
+            color: white;
+            margin-left: 50px;
+        }
+
+        #row-eightth hr {
+            width: 700px;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="question-main">
+        <div class="question-one">
+            <h1>What is cult?</h1>
+        </div>
+        <div id="question-first" onclick="first()"><span id="arrow-one"><i class="fa-solid fa-angle-down"></i></span>
+        </div>
+        <div id="answer-first">
+            <p>At cult, we make fitness fun and easy. We have best-in-class trainers and offer group workouts ranging
+                from yoga to boxing, strength to HRX. You can choose to work out at a cult center with trainer-led
+                sessions or through our home sessions, allowing you to exercise from the comfort of your home. cult.fit
+                uses cutting-edge technology to deliver a world-class fitness experience. Book classes and follow
+                workout videos—all with just a click of a button on the cult.fit app or website</p>
+
+        </div>
+        <div id="row-one">
+            <hr>
+        </div>
+
+        <div class="question-two">
+            <h1>What kind of workout formats are avaible at cult?</h1>
+        </div>
+        <div id="question-second" onclick=" second()"><span id="arrow-second"><i
+                    class="fa-solid fa-angle-down"></i></span></div>
+        <div id="answer-second">
+            <p>
+                At cult centers, you’ll discover a wide variety of workout formats, including boxing, dance fitness,
+                yoga, Adidas Strength+, Burn, and HRX. These workouts are designed to improve strength, muscle
+                endurance, flexibility, stamina, and balance. Try different formats to keep things exciting and choose
+                the ones that best support your personal fitness goals. Explore unique workout formats curated by
+                Bollywood stars like Hrithik Roshan, ensuring your sessions are fun, engaging, and anything but
+                monotonous. For more information about all our workout formats, click here. Prefer working out at home?
+                We've got you covered! Access Programs and LIVE videos tailored for both beginners and advanced fitness
+                enthusiasts, focusing on building strength, stamina, and mobility.
+            </p>
+
+        </div>
+        <div id="row-second">
+            <hr>
+        </div>
+
+
+
+        <div class="question-three">
+            <h1>How is the cult center different from a regular gym?</h1>
+        </div>
+        <div id="question-third" onclick=" third()"><span id="arrow-third"><i class="fa-solid fa-angle-down"></i></span>
+        </div>
+        <div id="answer-third">
+            <p>
+                With our non-conventional training facilities, we aim to provide a balanced mix of workouts that enhance
+                your health while keeping the experience fun and engaging. cult sets itself apart from other fitness
+                centers by offering group workouts designed for overall development. At cult, our philosophy is simple:
+                make fitness fun and easy. With best-in-class trainers and diverse group workouts, you can enjoy
+                exercising at a cult center through group classes or work out at home with online workout videos..
+                cult.fit leverages cutting-edge technology to deliver a world-class fitness experience. Book classes,
+                follow workout videos, and manage your fitness journey—all with just a click of a button on the cult.fit
+                app or website. To learn more about cult link.
+            </p>
+
+        </div>
+        <div id="row-third">
+            <hr>
+        </div>
+
+        <div id="question-four">
+            <h1>Which fitness service does cult.fit offer?</h1>
+        </div>
+        <div id="question-fourth" onclick="fourth()"><span id="arrow-fourth"><i
+                    class="fa-solid fa-angle-down"></i></span></div>
+        <div id="answer-fourth">
+            <p>cult.fit has services to meet all your fitness needs. Here's a quick overview: At-center Group Classes
+                Experience the uniqueness of cult's trainer-led sessions, available in diverse formats ranging from
+                cardio-based dance fitness and muscle-building HRX to Adidas Strength+ and relaxing yoga and stretching.
+                These group classes provide a full-body workout alongside like-minded individuals, fostering motivation
+                and a sense of community. Trainers will give you extra attention during your first few classes to ensure
+                you're comfortable with the exercises. There’s something for everyone, no matter where you are in your
+                fitness journey. Gyms Perfect for users with specific fitness goals, cult provides access to the widest
+                range of gyms in the country, including Fitness First, Gold’s Gym, and Volt Gyms, among others. These
+                gyms are equipped with trainers who offer general guidance on using equipment and structuring workouts
+                to achieve desired results. Personal training may also be available upon request. At-home Workouts Why
+                leave the comfort of your home? With the cult app, you can access a variety of online workouts,
+                including both pre-recorded and live sessions, to suit your schedule and fitness level. Transform Many
+                begin their fitness journey to shed extra kilos, but sustaining weight loss can be a challenge. With
+                cult, interact with health coaches who will guide you to achieve your goals and maintain your results.
+                No more weight see-saws—get in shape and stay that way!</p>
+        </div>
+        <div id="row-fourth">
+            <hr>
+        </div>
+
+
+        <div class="question-five">
+            <h1>Can I buy now and start later?</h1>
+        </div>
+        <div id="question-fiveth"><span id="arrow-fiveth" onclick=" fiveth()"><i
+                    class="fa-solid fa-angle-down"></i></span>
+        </div>
+
+        <div id="answer-fiveth">
+            <p>Yes, you can select a different start date for your pack at the time of purchase. You can also extend
+                this date further after purchasing the pack, provided it is done before your first cult class or
+                check-in. The extension is allowed up to 30 days from the originally selected start date, and only Elite
+                membership users can make this change twice. For session-based packs, such as cult transform and
+                personal training (PT), the start date is determined by the date of your first session. </p>
+        </div>
+        <div id="row-fiveth">
+            <hr>
+        </div>
+
+        <div class="question-six">
+            <h1>Which pack should I buy?</h1>
+        </div>
+        <div id="question-sixth"><span id="arrow-sixth" onclick=" sixth()"><i class="fa-solid fa-angle-down"></i></span>
+        </div>
+
+        <div id="answer-sixth">
+            <p>Yes, you can select a different start date for your pack at the time of purchase. You can also extend
+                this date further after purchasing the pack, provided it is done before your first cult class or
+                check-in. The extension is allowed up to 30 days from the originally selected start date, and only Elite
+                membership users can make this change twice. For session-based packs, such as cult transform and
+                personal training (PT), the start date is determined by the date of your first session. </p>
+        </div>
+        <div id="row-sixth">
+            <hr>
+        </div>
+
+        <div class="question-seveen">
+            <h1>What is the diffrence between cultpass ELITE and cultpass PRO</h1>
+        </div>
+        <div id="question-seveenth"><span id="arrow-seveenth" onclick=" seveenth()"><i
+                    class="fa-solid fa-angle-down"></i></span></div>
+
+        <div id="answer-seveenth">
+            <p>Yes, you can select a different start date for your pack at the time of purchase. You can also extend
+                this date further after purchasing the pack, provided it is done before your first cult class or
+                check-in. The extension is allowed up to 30 days from the originally selected start date, and only Elite
+                membership users can make this change twice. For session-based packs, such as cult transform and
+                personal training (PT), the start date is determined by the date of your first session. </p>
+        </div>
+        <div id="row-seveenth">
+            <hr>
+        </div>
+
+
+        <div class="question-eight">
+            <h1>What are the different types of gitness centers avaible on cultpass?</h1>
+        </div>
+        <div id="question-eightth"><span id="arrow-eightth" onclick=" eightth()"><i
+                    class="fa-solid fa-angle-down"></i></span></div>
+
+        <div id="answer-eightth">
+            <p>You can access the gyms listed on the cult.fit app by buying a cultpass ELITE or a cultpass PRO. cultpass
+                ELITE will give you unlimited access to all gyms in a city cultpass PRO will give you unlimited access
+                to all PRO gyms and 2 sessions per month at ELITE gyms or cult centers in a city. In addition to gym
+                access, you get unlimited access to LIVE workouts with both the cultpasses </p>
+        </div>
+        <div id="row-eightth">
+            <hr>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <script>
+        let one = document.getElementById("question-first")
+        let two = document.getElementById("answer-first")
+        let three = document.getElementById("arrow-one")
+
+        function first() {
+            if (two.style.display === 'none' || two.style.display === '') {
+                two.style.display = 'block';
+                three.style.transform = "rotate(180deg)";
+            }
+            else {
+                two.style.display = 'none';
+                three.style.transform = "rotate(0deg)";
+            }
+        }
+
+
+
+        let four = document.getElementById("question-second")
+        let five = document.getElementById("answer-second")
+        let six = document.getElementById("arrow-second")
+
+        function second() {
+            if (five.style.display === 'none' || five.style.display === '') {
+                five.style.display = 'block';
+            }
+            else {
+                five.style.display = 'none';
+            }
+        }
+
+
+        let seveen = document.getElementById("question-third")
+        let eight = document.getElementById("answer-third")
+        let nine = document.getElementById("arrow-third")
+
+        function third() {
+            if (eight.style.display === 'none' || eight.style.display === '') {
+                eight.style.display = 'block';
+            }
+            else {
+                eight.style.display = 'none';
+            }
+        }
+
+
+        let ten = document.getElementById("question-fourth")
+        let eleven = document.getElementById("answer-fourth")
+
+
+        function fourth() {
+            if (eleven.style.display === 'none' || eleven.style.display === '') {
+                eleven.style.display = 'block';
+            }
+            else {
+                eleven.style.display = 'none';
+            }
+        }
+
+
+        let twevel = document.getElementById("question-fiveth")
+        let thirten = document.getElementById("answer-fiveth")
+
+
+        function fiveth() {
+            if (thirten.style.display === 'none' || thirten.style.display === '') {
+                thirten.style.display = 'block';
+            }
+            else {
+                thirten.style.display = 'none';
+            }
+        }
+
+
+        let fourten = document.getElementById("question-sixth")
+        let fiveten = document.getElementById("answer-sixth")
+
+
+        function sixth() {
+            if (fiveten.style.display === 'none' || fiveten.style.display === '') {
+                fiveten.style.display = 'block';
+            }
+            else {
+                fiveten.style.display = 'none';
+            }
+        }
+
+
+
+        let sixten = document.getElementById("question-seveenth")
+        let seveenten = document.getElementById("answer-seveenth")
+
+
+        function seveenth() {
+            if (seveenten.style.display === 'none' || seveenten.style.display === '') {
+                seveenten.style.display = 'block';
+            }
+            else {
+                seveenten.style.display = 'none';
+            }
+        }
+
+
+
+        let eightten = document.getElementById("question-eightth")
+        let nineten = document.getElementById("answer-eightth")
+
+
+        function eightth() {
+            if (nineten.style.display === 'none' || nineten.style.display === '') {
+                nineten.style.display = 'block';
+            }
+            else {
+                nineten.style.display = 'none';
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

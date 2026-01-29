@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* header section :start */
+        .a {
+            position: absolute;
+            opacity: 0.8;
+            width: 100%;
+            background-color: black;
+            height: 600px;
+        }
+
+        .main {
+            height: 600px;
+
+            background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/6fd9d446-cd78-453a-8c9c-417ed3e00422/web/IN-en-20251117-TRIFECTA-perspective_2fe4e381-977f-49fd-a7f4-1da0bcf09429_large.jpg);
+            position: relative;
+        }
+
+        .header {
+            height: 100px;
+            width: 1250px;
+            display: flex;
+            margin-top: 20px;
+            margin-left: 50px;
+        }
+
+        .logo {
+
+            height: 80px;
+            width: 200px;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+
+        .logo img {
+            height: 80px;
+            width: 200px;
+
+        }
+
+        select {
+            background-color: rgba(0, 255, 255, 0.027);
+            color: white;
+            border-radius: 5px;
+            margin-left: 700px;
+            height: 40px;
+            width: 130px;
+            margin-top: 20px;
+            border: 1px solid white;
+        }
+
+        .header button {
+            border-radius: 5px;
+            margin-left: 10px;
+            background-color: red;
+            height: 40px;
+            width: 100px;
+            margin-top: 20px;
+        }
+
+        .text {
+            color: white;
+            height: 140px;
+            text-align: center;
+            font-size: xx-large;
+
+        }
+
+        .texttwo {
+            color: white;
+            text-align: center;
+        }
+
+        input {
+            border-radius: 5px;
+            border: 1px solid rgba(255, 255, 255, 0.699);
+            margin-left: 350px;
+            height: 40px;
+            width: 450px;
+            background-color: rgba(0, 0, 0, 0.555);
+            color: black;
+        }
+
+        .search button {
+            border-radius: 5px;
+            margin-left: 10px;
+            background-color: red;
+            color: white;
+            height: 50px;
+            width: 170px;
+            margin-top: 20px;
+        }
+
+        option i {
+            background-color: aquamarine;
+            height: 8px;
+            width: 8px;
+        }
+
+        svg {
+            height: 100px;
+            width: 1300px;
+            background-color: aquamarine;
+            color: antiquewhite;
+        }
+
+        path {
+            width: 1;
+        }
+
+        /* header section :end */
+
+        /* mainone section :start */
+        .mainone {
+            background-color: black;
+            color: white;
+            height: 400px;
+        }
+
+        .heading {
+            height: 50px;
+        }
+
+        .img {
+            background-color: rgb(0, 0, 0);
+            height: 250px;
+            width: 950px;
+            margin-left: 200px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .imgone {
+            box-sizing: border-box;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 255, 0.363);
+            height: 250px;
+            width: 200px;
+        }
+
+        .imgone img {
+            box-sizing: border-box;
+            border-radius: 10px;
+            height: 250px;
+            width: 200px;
+        }
+
+        .heading {
+            padding-top: 1px;
+            margin-left: 200px;
+        }
+
+
+
+        h5 {
+            color: black;
+            font-size: 100px;
+            position: absolute;
+            top: 600px;
+            -webkit-text-stroke: 2px white;
+        }
+
+        /* mainone section :end */
+
+        /* maintwo section :start */
+        .maintwo {
+            background-color: rgb(0, 0, 0);
+            height: 400px;
+        }
+
+        .maintw {
+            background-color: black;
+            color: white;
+            height: 50px;
+            margin-left: 200px;
+
+        }
+
+        .reasons {
+            background-color: rgb(0, 0, 0);
+            height: 400px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .reasonsone {
+            background: linear-gradient(to bottom, rgb(28, 28, 87), rgba(255, 0, 0, 0.445));
+            ;
+            color: white;
+            height: 250px;
+            width: 200px;
+            margin-left: 200px;
+            box-sizing: border-box;
+            border-radius: 20px;
+        }
+
+        .reasonsone img {
+            margin-left: 140px;
+            height: 60px;
+            width: 60px;
+            margin-top: 30px;
+        }
+
+        .reasonstwo {
+            background: linear-gradient(to bottom, rgb(28, 28, 87), rgba(255, 0, 0, 0.445));
+            ;
+            color: white;
+
+            height: 250px;
+            width: 200px;
+            box-sizing: border-box;
+            border-radius: 20px;
+        }
+
+        .reasonstwo img {
+            margin-left: 140px;
+            height: 50px;
+            width: 60px;
+        }
+
+        .reasonsthird {
+            background: linear-gradient(to bottom, rgb(28, 28, 87), rgba(255, 0, 0, 0.445));
+            ;
+            color: white;
+            height: 250px;
+            width: 200px;
+            box-sizing: border-box;
+            border-radius: 20px;
+        }
+
+        .reasonsthird img {
+            margin-left: 140px;
+            height: 60px;
+            width: 70px;
+            margin-top: 20px;
+        }
+
+        .reasonsfourth {
+            background: linear-gradient(to bottom, rgb(28, 28, 87), rgba(255, 0, 0, 0.445));
+            ;
+            color: white;
+            height: 250px;
+            width: 200px;
+            margin-right: 200px;
+            box-sizing: border-box;
+            border-radius: 20px;
+        }
+
+        .reasonsfourth img {
+            margin-left: 140px;
+            height: 60px;
+            width: 70px;
+        }
+
+        /* maintwo section :end */
+
+
+        /* questions section :start */
+        .mainquestion {
+            background-color: aquamarine;
+            height: 700px;
+        }
+
+        .questionheading {
+            background-color: black;
+            color: white;
+            height: 50px;
+            width: 1000px;
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+
+        .one {
+            background-color: rgba(0, 0, 0, 0.445);
+            height: 80px;
+            width: 1000px;
+            margin-left: 150px;
+            margin-bottom: 20px;
+            font-size: 25px;
+            box-sizing: border-box;
+            padding-left: 10px;
+            padding-top: 25px;
+        }
+
+        .search {
+            /* background-color: blueviolet; */
+            height: 150px;
+        }
+
+        .search div {
+            height: 50px;
+            box-sizing: border-box;
+            color: white;
+            margin-left: 350px;
+            padding-top: 30px;
+            font-size: 20px;
+
+        }
+
+        .search input {
+            border-radius: 5px;
+            border: 1px solid rgba(255, 255, 255, 0.699);
+            margin-left: 300px;
+            height: 40px;
+            width: 550px;
+            background-color: rgba(0, 0, 0, 0.555);
+            color: black;
+        }
+
+        button {
+            border-radius: 5px;
+            margin-left: 10px;
+            background-color: red;
+            color: white;
+            height: 50px;
+            width: 170px;
+            margin-top: 20px;
+        }
+
+        /* questions section :end */
+
+
+
+        /* footer section :start */
+        .footer {
+            background-color: black;
+            height: 400px;
+        }
+
+        .footerone {
+            color: white;
+            height: 60px;
+            padding-top: 40px;
+            margin-left: 180px;
+            font-size: 20px;
+            box-sizing: border-box;
+        }
+
+        .footertwo {
+            font-size: 15px;
+            margin-top: 10px;
+            color: white;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .footerfirst select {
+            background-color: rgba(0, 255, 255, 0.027);
+            color: white;
+            border-radius: 5px;
+            margin-left: 180px;
+            height: 40px;
+            width: 130px;
+            margin-top: 20px;
+            border: 1px solid white;
+        }
+
+        .footersecond h3 {
+            color: white;
+            margin-left: 180px;
+        }
+
+        .footersecond p {
+            color: white;
+            margin-left: 180px;
+        }
+
+        /* footer section :end */
+    </style>
+</head>
+
+<body>
+    <!-- header section :start -->
+    <div class="main">
+        <div class="a">
+            <div class="header">
+                <div class="logo"><img src="C:\Users\HP\Downloads\download (5).png" alt=""></div>
+                <div><select><i class="fa-solid fa-language"></i>
+                        <option value="language"><i class="fa-solid fa-language"></i>hindi</option>
+                        <option value="language">ENGLISH</option>
+                    </select></div>
+                <button>sign in</button>
+            </div>
+
+            <div class="text">
+                <h1>
+                    Unlimited movies,<br> shows, and more
+                </h1>
+            </div>
+            <div class="texttwo">
+                <h3> Starts at ₹149. Cancel at any time. <br><br>Ready to watch? Enter your email to create or restart
+                    your membership.</h3>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Email address">
+                <button>Get Started</button>
+            </div>
+        </div>
+    </div>
+    <!-- header section :end -->
+
+
+    <!--  mainone section :start  -->
+    <div class="mainone">
+        <div class="heading">
+            <h2>Trending Now</h2>
+        </div>
+        <div class="img">
+
+            <div class="imgone"><img
+                    src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgC7FJh91D2EWvGhPLeTpbDa7PYmBUGEbf1_ph6nnMJRZklUyx"
+                    alt="">
+                <h5>1</h5>
+            </div>
+
+            <div class="imgone"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2O_CeJTILMuJQ8Mi8YiZHFf7cDde5AMU7NtTVYRO1xyPVbqtk"
+                    alt="">
+                <h5>2</h5>
+            </div>
+
+            <div class="imgone"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvDS7eOBSDcpfrhFyCgktyK4hWABc8YZAqJwTShgq6GGyP1Odz"
+                    alt="">
+                <h5>3</h5>
+            </div>
+
+            <div class="imgone"><img
+                    src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRK1nTeuZWFQpCQJpu7qK8tPKOiNTyE-Ki-irvaCO_Q1ntbNf4b"
+                    alt="">
+                <h5>4</h5>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--  mainone section :end -->
+
+
+    <!-- maintwo section :start -->
+    <div class="maintwo">
+        <div class="maintw">
+            <h2>More reasons to join</h2>
+        </div>
+        <div class="reasons">
+            <div class="reasonsone">
+                <h2>Enjoy on your TV</h2>
+                <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+                <div><img src="C:\Users\HP\Downloads\download (9).png" alt=""></div>
+            </div>
+            <div class="reasonstwo">
+                <h2>Download your shows to watch offline</h2>
+                <p>Save your favourites easily and always have something to watch.</p>
+                <div><img src="C:\Users\HP\Downloads\download (7).png" alt=""></div>
+            </div>
+            <div class="reasonsthird">
+                <h2>Watch everywhere</h2>
+                <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+                <div><img src="C:\Users\HP\Downloads\download (10).png" alt=""></div>
+            </div>
+            <div class="reasonsfourth">
+                <h2>Create profiles for kids</h2>
+                <p>Send kids on adventures with their favourite characters in a space made just for them — free with
+                    your membership.</p>
+                <div><img src="C:\Users\HP\Downloads\download (8).png" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <!-- maintwo section :end -->
+
+
+
+    <!-- questions section :start -->
+    <div class="mainquestion">
+        <div class="questionheading">
+            <h3>Frequently Asked Questions</h3>
+        </div>
+        <div class="one">What is Netflix?</div>
+        <div class="one">How much does Netflix cost?</div>
+        <div class="one">Where can I watch?</div>
+        <div class="one">How do I cancel?</div>
+        <div class="one">What can I watch on Netflix?</div>
+        <div class="one">Is Netflix good for kids?</div>
+
+    </div>
+    <div class="search">
+        <div> Ready to watch? Enter your email to create or restart your membership.</div>
+        <input type="text" placeholder="Email address">
+        <button>Get Started</button>
+    </div>
+    <!-- questions section :end -->
+
+
+    <!-- footer section :start -->
+    <div class="footer">
+        <div class="footerone">Questions? Call 000-800-919-1743</div>
+        <div class="footertwo">
+            <div>
+                <ul>
+                    <li>FAQ</li>
+                    <li>Investor Relations</li>
+                    <li>Privacy</li>
+                    <li>Speed Test</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        Help Centre</li>
+                    <li>
+                        Jobs </li>
+                    <li>Cookie Preferences</li>
+                    <li>Legal Notices</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        Account</li>
+                    <li>
+                        Ways to Watch</li>
+                    <li>
+                        Corporate Information</li>
+                    <li>
+                        Only on Netflix</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        Only on Netflix</li>
+                    <li>
+                        Only on Netflix</li>
+                    <li>
+                        Contact Us</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerfirst">
+            <select><i class="fa-solid fa-language"></i>
+                <option value="language"><i class="fa-solid fa-language"></i>hindi</option>
+                <option value="language">ENGLISH</option>
+            </select>
+        </div>
+        <div class="footersecond">
+            <h3>Netflix India</h3>
+            <p>This page is protected by Google reCAPTCHA to ensure you're not a bot. Learn more.</p>
+        </div>
+    </div>
+    <!-- footer section :end -->
+</body>
+
+</html>
